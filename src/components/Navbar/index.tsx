@@ -153,7 +153,9 @@ const Navbar = () => {
           {width < 1200 && theme === "light" && fixDrop ? (
             <div className={dropOpen ? "visible" : "none"}>
               <>
-                <ButtonTranslate />
+                <div className={classes.links}>
+                  <ButtonTranslate />
+                </div>{" "}
                 <a
                   className={classes.links}
                   rel="noreferrer"
@@ -225,7 +227,9 @@ const Navbar = () => {
           {width < 1200 && theme !== "light" && fixDrop ? (
             <div className={dropOpen ? "visibleDark" : "noneDark"}>
               <>
-                <ButtonTranslate />
+                <div className={classes.links}>
+                  <ButtonTranslate />
+                </div>{" "}
                 <a
                   className={classes.links}
                   rel="noreferrer"
