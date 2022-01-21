@@ -1,0 +1,128 @@
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #fbffe2;
+$Blue: #1c6dd0;
+$pink: #ed0b70;
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&display=swap");
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+.buttonContainer {
+  position: relative;
+  width: 30%;
+  height: 5rem;
+  overflow: hidden;
+  border: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2.2vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include button(
+      $Black,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $White
+    );
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: pointer;
+    }
+  }
+}
+
+.buttonContainerDark {
+  position: relative;
+  width: 30%;
+  height: 5rem;
+  overflow: hidden;
+  border: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2.2vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include button(
+      $Grey,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      $Black
+    );
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .buttonContainer {
+    width: 90%;
+    margin: 0%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .buttonContainerDark {
+    width: 90%;
+    margin: 0%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}

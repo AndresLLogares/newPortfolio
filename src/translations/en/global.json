@@ -1,0 +1,18 @@
+{
+  "name": {
+    "full-stack-developer": "Full Stack Developer"
+  },
+  "titles": {
+    "about-me": "About Me",
+    "Technologies": "Technologies",
+    "Contact": "Contact Me"
+  },
+  "About": {
+    "first": "Andres Logares was born in Buenos Aires, Argentina and at 17 he decided to study gastronomy and that is how he began to study at the I.A.G. (Argentine Institute of Gastronomy), for 2 years while working in DISCO supermarkets. Before finishing his degree he had done some internships in restaurants but his great opportunity was to personally give his CV to the different hotels in Buenos Aires, that is how the Hotel Continental gave him the opportunity to start as an intern and where he would be for 10 years becoming the hotel´s Pastry Chef and which gave him the opportunity to know several Latin American countries such as Mexico or Chile.",
+    "second": "After that time in the hotel, he decided that he had already finished his cycle there and spent some time traveling and with small personal projects until finally he decided by reference of a friend to introduce himself to the world of programming through the Bootcamp of ¨SoyHenry¨, there he discovered a fascinating world in which he could create fascinating things from nothing and be able to apply all his creativity that he had had in gastronomy. From that time he has not stopped researching and carrying out projects with different technologies in order to improve himself and be able to contribute what he can to others."
+  },
+  "CV": {
+    "first": "English CV",
+    "second": "Spanish CV"
+  }
+}

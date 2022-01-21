@@ -1,0 +1,111 @@
+$Blue: #1c6dd0;
+$White: #ffffff;
+$Black: #231b1b;
+$Nav: #fbffe2;
+$Grey: #2c272e;
+
+.none {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  top: 10vh;
+  background-color: $Nav;
+  border-radius: 10px 10px 10px 10px;
+  border: 5px solid $Black;
+  box-shadow: none;
+  z-index: 2;
+  animation-duration: 1s;
+  animation-name: bounceOutLeft;
+  transform: translateX(-2000px);
+}
+.noneDark {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  top: 10vh;
+  background-color: $Grey;
+  border-radius: 10px 10px 10px 10px;
+  border: 5px solid $Nav;
+  box-shadow: none;
+  z-index: 2;
+  animation-duration: 1s;
+  animation-name: bounceOutLeft;
+  transform: translateX(-2000px);
+}
+
+@keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+}
+
+.visible {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: fit-content;
+  top: 10vh;
+  background-color: $Nav;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 5px $Black;
+  box-shadow: none;
+  z-index: 2;
+  animation-duration: 1s;
+  animation-name: bounceInLeft;
+}
+
+.visibleDark {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: fit-content;
+  top: 10vh;
+  background-color: $Grey;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 5px $Nav;
+  box-shadow: none;
+  z-index: 2;
+  animation-duration: 1s;
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
