@@ -67,6 +67,12 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "4rem",
     height: "4rem",
     backgroundColor: colors.blue,
+    "&:hover": {
+      backgroundColor: colors.pink,
+      "& $iconLight": {
+        color: colors.black,
+      },
+    },
     "@media (max-width: 1024px)": {
       width: "3.5rem",
       height: "3.5rem",
@@ -80,6 +86,12 @@ const useStyles = makeStyles<DefaultTheme>({
     "@media (max-width: 1024px)": {
       width: "3.5rem",
       height: "3.5rem",
+    },
+    "&:hover": {
+      backgroundColor: colors.nav,
+      "& $iconDark": {
+        color: colors.blue,
+      },
     },
   },
 });
