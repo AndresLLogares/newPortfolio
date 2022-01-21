@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c46bf24.css",
+    "main.js": "/static/js/main.ab27427c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/about.webp": "/static/media/about.bcc6216cd9018d5e283e.webp",
+    "static/media/spain.webp": "/static/media/spain.7e0c2eb7a358a3051de8.webp",
+    "static/media/english.webp": "/static/media/english.c20d10e225efd2cae237.webp",
+    "static/media/logo.svg": "/static/media/logo.a020a5fbbc92797f8eef2eea277278cf.svg",
+    "index.html": "/index.html",
+    "main.8c46bf24.css.map": "/static/css/main.8c46bf24.css.map",
+    "main.ab27427c.js.map": "/static/js/main.ab27427c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c46bf24.css",
+    "static/js/main.ab27427c.js"
+  ]
+}

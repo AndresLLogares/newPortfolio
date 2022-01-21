@@ -53,7 +53,9 @@ const Navbar = () => {
           <div className={classes.divButtons}>
             {width > 1200 ? (
               <>
-                <ButtonTranslate />
+                <div className={classes.links}>
+                  <ButtonTranslate />
+                </div>
                 <a
                   className={classes.links}
                   rel="noreferrer"
@@ -165,7 +167,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    About me
+                    {t("titles.about-me")}
                   </Button>
                 </a>
                 <a
@@ -181,7 +183,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    Technologies
+                    {t("titles.Technologies")}
                   </Button>
                 </a>
                 <a
@@ -214,7 +216,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    Contact Me
+                    {t("titles.Contact")}
                   </Button>
                 </a>
               </>
@@ -237,7 +239,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    About me
+                    {t("titles.about-me")}
                   </Button>
                 </a>
                 <a
@@ -253,7 +255,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    Technologies
+                    {t("titles.Technologies")}
                   </Button>
                 </a>
                 <a
@@ -286,7 +288,7 @@ const Navbar = () => {
                         : classes.buttonDark
                     }
                   >
-                    Contact Me
+                    {t("titles.Contact")}
                   </Button>
                 </a>
               </>
@@ -352,8 +354,8 @@ const useStyles = makeStyles<DefaultTheme>({
   },
   links: {
     textDecoration: "none",
-    marginRight: "2%",
-    marginLeft: "2%",
+    marginRight: "2rem",
+    marginLeft: "0rem",
   },
   buttonLight: {
     width: "9rem",
@@ -370,10 +372,10 @@ const useStyles = makeStyles<DefaultTheme>({
       backgroundColor: colors.blue,
       color: colors.white,
     },
-    "@media (max-width: 1024px)": {
+    "@media (max-width: 1200px)": {
       margin: 0,
-      marginTop: "5%",
-      marginBottom: "5%",
+      marginTop: "1rem",
+      marginBottom: "1rem",
       width: "13rem",
     },
   },
@@ -392,10 +394,10 @@ const useStyles = makeStyles<DefaultTheme>({
       backgroundColor: colors.pink,
       color: colors.nav,
     },
-    "@media (max-width: 1024px)": {
+    "@media (max-width: 1200px)": {
       margin: 0,
-      marginTop: "5%",
-      marginBottom: "5%",
+      marginTop: "1rem",
+      marginBottom: "1rem",
       width: "13rem",
     },
   },

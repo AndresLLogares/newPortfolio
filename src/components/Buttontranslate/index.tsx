@@ -47,11 +47,11 @@ const useStyles = makeStyles<DefaultTheme>({
     "&:hover": {
       cursor: "pointer",
     },
-    "@media (max-width: 1024px)": {
+    "@media (max-width: 1200px)": {
       margin: 0,
       height: "4.5rem",
-      marginTop: "5%",
-      marginBottom: "5%",
+      marginTop: "1rem",
+      marginBottom: "1rem",
       width: "13rem",
     },
   },
