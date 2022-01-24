@@ -1,4 +1,3 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 import SocialMedia from "./socialmedia";

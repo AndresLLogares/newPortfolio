@@ -1,17 +1,16 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
 import Image from "../../assets/about.webp";
-import { colors } from "../../styles/colors";
-import { useGlobalState } from "../../hooks/useTheme";
+import { useTheme } from "@material-ui/core/styles";
 
 const AboutMe = () => {
-  const classes = useStyles();
+  let colorTheme: any = useTheme();
+  colorTheme = colorTheme.palette.primary.main;
+  const classes = useStyles({ colorTheme });
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
 
   return (
     <div id="aboutme" className={classes.rootAboutMe}>
@@ -22,16 +21,14 @@ const AboutMe = () => {
         </div>{" "}
         <div className={classes.divSub}>
           <Typography
-            className={
-              theme === "light" ? classes.subtitle : classes.subtitleDark
-            }
+            style={{ color: colorTheme }}
+            className={classes.subtitle}
           >
             {t("About.first")}
           </Typography>
           <Typography
-            className={
-              theme === "light" ? classes.subtitle : classes.subtitleDark
-            }
+            style={{ color: colorTheme }}
+            className={classes.subtitle}
           >
             {t("About.second")}
           </Typography>
@@ -40,7 +37,7 @@ const AboutMe = () => {
     </div>
   );
 };
-const useStyles = makeStyles<DefaultTheme>((theme) => ({
+const useStyles = makeStyles<DefaultTheme>(() => ({
   rootAboutMe: {
     display: "flex",
     justifyContent: "flex-start",
@@ -114,13 +111,6 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     fontSize: "1.2rem",
     fontWeight: "bold",
     fontFamily: ["Poppins", "sans-serif"].join(","),
-    color: colors.black,
-  },
-  subtitleDark: {
-    fontSize: "1.2rem",
-    fontWeight: "bold",
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-    color: colors.nav,
   },
 }));
 

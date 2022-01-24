@@ -1,18 +1,16 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { DefaultTheme } from "@material-ui/styles";
-import { useGlobalState } from "../../hooks/useTheme";
-import { colors } from "../../styles/colors";
+import { useTheme } from "@material-ui/core/styles";
+
 const SubTitles = (props: any) => {
-  const classes = useStyles();
-  const [theme] = useGlobalState("theme");
+  let colorTheme: any = useTheme();
+  colorTheme = colorTheme.palette.primary.main;
+  const classes = useStyles({ colorTheme });
 
   return (
     <div className={classes.rootSubtitle}>
-      <Typography
-        className={theme === "light" ? classes.subtitle : classes.subtitleDark}
-      >
+      <Typography style={{ color: colorTheme }} className={classes.subtitle}>
         {props.title}
       </Typography>
     </div>
@@ -32,13 +30,6 @@ const useStyles = makeStyles<DefaultTheme>({
     fontSize: "5vh",
     fontFamily: ["Poppins", "sans-serif"].join(","),
     fontWeight: "bold",
-    color: colors.black,
-  },
-  subtitleDark: {
-    fontSize: "5vh",
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-    fontWeight: "bold",
-    color: colors.nav,
   },
 });
 

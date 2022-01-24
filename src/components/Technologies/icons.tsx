@@ -1,4 +1,3 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { LogoReact } from "@styled-icons/ionicons-solid/LogoReact";
 import { Javascript } from "@styled-icons/boxicons-logos/Javascript";

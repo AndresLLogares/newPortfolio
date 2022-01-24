@@ -1,4 +1,3 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useGlobalState } from "../../hooks/useTheme";
 import { Sun } from "@styled-icons/fa-solid/Sun";

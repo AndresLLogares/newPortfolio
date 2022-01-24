@@ -1,0 +1,75 @@
+#floatingBarsG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 130px;
+}
+.blockG {
+  position: absolute;
+  background-color: #1c6dd0;
+  width: 14px;
+  height: 33px;
+  border-radius: 12px 12px 0 0;
+  transform: scale(0.4);
+  animation-name: fadeG;
+  animation-duration: 0.48s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+#rotateG_01 {
+  left: 0;
+  top: 39px;
+  animation-delay: 0.18s;
+  transform: rotate(-90deg);
+}
+#rotateG_02 {
+  left: 11px;
+  top: 14px;
+  animation-delay: 0.24s;
+  transform: rotate(-45deg);
+}
+#rotateG_03 {
+  left: 36px;
+  top: 4px;
+  animation-delay: 0.3s;
+  transform: rotate(0deg);
+}
+#rotateG_04 {
+  right: 11px;
+  top: 14px;
+  animation-delay: 0.36s;
+  transform: rotate(45deg);
+}
+#rotateG_05 {
+  right: 0;
+  top: 39px;
+  animation-delay: 0.42000000000000004s;
+  transform: rotate(90deg);
+}
+#rotateG_06 {
+  right: 11px;
+  bottom: 10px;
+  animation-delay: 0.48s;
+  transform: rotate(135deg);
+}
+#rotateG_07 {
+  bottom: 0;
+  left: 36px;
+  animation-delay: 0.5399999999999999s;
+  transform: rotate(180deg);
+}
+#rotateG_08 {
+  left: 11px;
+  bottom: 10px;
+  animation-delay: 0.6s;
+  transform: rotate(-135deg);
+}
+@keyframes fadeG {
+  0% {
+    background-color: #ed0b71;
+  }
+  100% {
+    background-color: #1c6dd0;
+  }
+}

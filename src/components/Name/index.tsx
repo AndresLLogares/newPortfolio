@@ -1,16 +1,15 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import Logo from "./logo.svg";
 import { DefaultTheme } from "@material-ui/styles";
-import { useGlobalState } from "../../hooks/useTheme";
-import { colors } from "../../styles/colors";
+import { useTheme } from "@material-ui/core/styles";
 
 const Name = () => {
-  const classes = useStyles();
+  let colorTheme: any = useTheme();
+  colorTheme = colorTheme.palette.primary.main;
+  const classes = useStyles({ colorTheme });
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
 
   return (
     <div id="name" className={classes.rootName}>
@@ -20,31 +19,30 @@ const Name = () => {
         </div>
         <div className={classes.divSort}>
           <Typography
+            style={{ color: colorTheme }}
             variant="h1"
-            className={theme === "light" ? classes.name : classes.nameDark}
+            className={classes.name}
           >
             Andrés
           </Typography>
           <Typography
+            style={{ color: colorTheme }}
             variant="h1"
-            className={theme === "light" ? classes.name : classes.nameDark}
+            className={classes.name}
           >
             Luis
           </Typography>
           <Typography
+            style={{ color: colorTheme }}
             variant="h1"
-            className={theme === "light" ? classes.name : classes.nameDark}
+            className={classes.name}
           >
             Logares
           </Typography>
         </div>
       </div>
       <div className={classes.divSubname}>
-        <Typography
-          className={
-            theme === "light" ? classes.subtitle : classes.subtitleDark
-          }
-        >
+        <Typography style={{ color: colorTheme }} className={classes.subtitle}>
           {t("name.full-stack-developer")}
         </Typography>
       </div>
@@ -101,17 +99,6 @@ const useStyles = makeStyles<DefaultTheme>({
     fontFamily: ["Oswald", "sans-serif"].join(","),
     textTransform: "uppercase",
     fontWeight: "bold",
-    color: colors.black,
-    "@media (max-width: 1024px)": {
-      fontSize: "6vh",
-    },
-  },
-  nameDark: {
-    fontSize: "8vh",
-    fontFamily: ["Oswald", "sans-serif"].join(","),
-    textTransform: "uppercase",
-    fontWeight: "bold",
-    color: colors.nav,
     "@media (max-width: 1024px)": {
       fontSize: "6vh",
     },
@@ -128,17 +115,7 @@ const useStyles = makeStyles<DefaultTheme>({
     fontFamily: ["Ultra", "serif"].join(","),
     textTransform: "uppercase",
     fontWeight: 500,
-    color: colors.black,
-    "@media (max-width: 1024px)": {
-      fontSize: "4vh",
-    },
-  },
-  subtitleDark: {
-    fontSize: "6vh",
-    fontFamily: ["Ultra", "serif"].join(","),
-    textTransform: "uppercase",
-    fontWeight: 500,
-    color: colors.nav,
+
     "@media (max-width: 1024px)": {
       fontSize: "4vh",
     },

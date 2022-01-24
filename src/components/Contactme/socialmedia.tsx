@@ -1,4 +1,3 @@
-import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin";
 import { Github } from "@styled-icons/boxicons-logos/Github";
@@ -12,7 +11,6 @@ import { DefaultTheme } from "@material-ui/styles";
 import "../Technologies/icon.scss";
 
 const SocialMedia = () => {
-
   const classes = useStyles();
 
   const [theme] = useGlobalState("theme");
