@@ -92,7 +92,7 @@ const Navbar = () => {
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
                   target="_blank"
-                  href="https://drive.google.com/file/d/1t3lkUL7CWuUuNC3u5f2-ltlXHujwpGWh/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1JcWVsJkDIw-iFITPQGex8qwI5aLwv4ky/view?usp=sharing"
                 >
                   <Button
                     className={
@@ -192,7 +192,7 @@ const Navbar = () => {
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
                   target="_blank"
-                  href="https://drive.google.com/file/d/1t3lkUL7CWuUuNC3u5f2-ltlXHujwpGWh/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1JcWVsJkDIw-iFITPQGex8qwI5aLwv4ky/view?usp=sharing"
                 >
                   <Button
                     className={
@@ -266,7 +266,7 @@ const Navbar = () => {
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
                   target="_blank"
-                  href="https://drive.google.com/file/d/1t3lkUL7CWuUuNC3u5f2-ltlXHujwpGWh/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1JcWVsJkDIw-iFITPQGex8qwI5aLwv4ky/view?usp=sharing"
                 >
                   <Button
                     className={

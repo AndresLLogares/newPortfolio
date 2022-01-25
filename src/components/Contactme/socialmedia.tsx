@@ -26,7 +26,7 @@ const SocialMedia = () => {
         }
         target="_blank"
         rel="noreferrer"
-        href="https://drive.google.com/file/d/1t3lkUL7CWuUuNC3u5f2-ltlXHujwpGWh/view?usp=sharing"
+        href="https://drive.google.com/file/d/1JcWVsJkDIw-iFITPQGex8qwI5aLwv4ky/view?usp=sharing"
       >
         <span className={classes.mas}>
           <TextDocument
@@ -44,7 +44,7 @@ const SocialMedia = () => {
         }
         target="_blank"
         rel="noreferrer"
-        href="https://drive.google.com/file/d/1nK7WpGJkyxEneNV_IWA8V-4U1HOinYJJ/view?usp=sharing"
+        href="https://drive.google.com/file/d/10MLP4tvDM8QXsBwxPAIuTVqglq-8Zk12/view?usp=sharing"
       >
         <span className={classes.mas}>
           <TextDocument
