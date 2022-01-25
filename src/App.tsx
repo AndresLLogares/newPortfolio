@@ -60,9 +60,10 @@ const App = () => {
       <ThemeProvider theme={currentTheme}>
         <Box style={{ backgroundColor: colorTheme }} className={classes.root}>
           <Suspense fallback={<Loading />}>
-            <Navbar />
+            <Loading />
+            {/*     <Navbar />
             <Buttontoggle />
-            <Home />
+            <Home /> */}
           </Suspense>
         </Box>
       </ThemeProvider>
