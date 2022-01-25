@@ -10,6 +10,7 @@ import { dark as darkTheme } from "./styles/dark";
 import global_en from "./translations/en/global.json";
 import global_es from "./translations/es/global.json";
 import { DefaultTheme } from "@material-ui/styles";
+import { colors } from "./styles/colors";
 import Loading from "./components/Loading/index";
 const Home = lazy(() => import("./components/Home/index"));
 const Navbar = lazy(() => import("./components/Navbar/index"));
@@ -26,9 +27,9 @@ const App = () => {
     const checkTheme = () => {
       let localTheme = window.localStorage.getItem("theme");
       if (localTheme === undefined) {
-        setCurrentTheme(darkTheme);
-        setTheme("dark");
-        setColorTheme(darkTheme.palette.background.default);
+        setCurrentTheme(lightTheme);
+        setTheme("light");
+        setColorTheme(lightTheme.palette.background.default);
       } else if (localTheme === "light") {
         setTheme("light");
         setCurrentTheme(lightTheme);
@@ -58,7 +59,7 @@ const App = () => {
   return (
     <I18nextProvider i18n={i18next}>
       <ThemeProvider theme={currentTheme}>
-        <Box style={{ backgroundColor: colorTheme }} className={classes.root}>
+        <Box className={theme === "light" ? classes.rootLight : classes.root}>
           <Suspense fallback={<Loading />}>
             <Navbar />
             <Buttontoggle />
@@ -76,6 +77,17 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     minHeight: "100vh",
     flexDirection: "column",
     height: "fit-content",
+    backgroundColor: colors.grey,
+    transition: "background-color 1s ease",
+  },
+  rootLight: {
+    display: "flex",
+    width: "100%",
+    minHeight: "100vh",
+    flexDirection: "column",
+    height: "fit-content",
+    backgroundColor: colors.nav,
+    transition: "background-color 1s ease",
   },
 }));
 export default App;

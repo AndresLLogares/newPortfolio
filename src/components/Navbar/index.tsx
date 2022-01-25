@@ -312,6 +312,7 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     boxShadow: "none",
     borderBottom: `5px solid ${colors.black}`,
+    transition: "background-color 1s ease",
   },
   navbarDark: {
     display: "flex",
@@ -322,6 +323,7 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     boxShadow: "none",
     borderBottom: `5px solid ${colors.nav}`,
+    transition: "background-color 1s ease",
   },
   toolbar: {
     display: "flex",

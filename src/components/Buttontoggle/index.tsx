@@ -66,6 +66,7 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "4rem",
     height: "4rem",
     backgroundColor: colors.blue,
+    transition: "background-color 1s ease",
     "&:hover": {
       backgroundColor: colors.pink,
       "& $iconLight": {
@@ -82,6 +83,7 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "4rem",
     height: "4rem",
     backgroundColor: colors.pink,
+    transition: "background-color 1s ease",
     "@media (max-width: 1024px)": {
       width: "3.5rem",
       height: "3.5rem",
