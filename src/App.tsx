@@ -59,7 +59,7 @@ const App = () => {
   return (
     <I18nextProvider i18n={i18next}>
       <ThemeProvider theme={currentTheme}>
-        <Box className={theme === "light" ? classes.rootLight : classes.root}>
+        <Box className={theme !== "light" ? classes.rootDark : classes.root}>
           <Suspense fallback={<Loading />}>
             <Navbar />
             <Buttontoggle />
@@ -71,7 +71,7 @@ const App = () => {
   );
 };
 const useStyles = makeStyles<DefaultTheme>((theme) => ({
-  root: {
+  rootDark: {
     display: "flex",
     width: "100%",
     minHeight: "100vh",
@@ -80,7 +80,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     backgroundColor: colors.grey,
     transition: "background-color 1s ease",
   },
-  rootLight: {
+  root: {
     display: "flex",
     width: "100%",
     minHeight: "100vh",

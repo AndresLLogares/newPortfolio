@@ -1,4 +1,3 @@
-import { ReactComponent as LoadingSVG } from "../../assets/Loading.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
 import { DefaultTheme } from "@material-ui/styles";
@@ -26,7 +25,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     minHeight: "100vh",
     flexDirection: "column",
     height: "fit-content",
-    backgroundColor: "#2C272E",
+    backgroundColor: "#FBFFE2",
     alignItems: "center",
     justifyContent: "center",
   },

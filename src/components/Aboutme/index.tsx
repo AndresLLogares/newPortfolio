@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
