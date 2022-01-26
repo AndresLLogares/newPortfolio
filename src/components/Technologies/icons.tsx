@@ -329,13 +329,13 @@ const useStyles = makeStyles<DefaultTheme>({
     },
   },
   icons: {
-    width: "3.5rem",
-    height: "3.5rem",
+    width: "6vh",
+    height: "6vh",
     color: colors.blue,
   },
   iconsDark: {
-    width: "3.5rem",
-    height: "3.5rem",
+    width: "6vh",
+    height: "6vh",
     color: colors.pink,
   },
   mas: {

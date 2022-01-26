@@ -45,7 +45,12 @@ const Navbar = () => {
       >
         <Toolbar className={classes.toolbar}>
           <div className={classes.divLogo}>
-            <a rel="noreferrer" style={{ textDecoration: "none" }} href="#name">
+            <a
+              className={classes.links}
+              rel="noreferrer"
+              style={{ textDecoration: "none" }}
+              href="#name"
+            >
               <img src={Logo} alt="logo" className={classes.logo} />
             </a>
           </div>
@@ -328,6 +333,7 @@ const useStyles = makeStyles<DefaultTheme>({
   toolbar: {
     display: "flex",
     width: "90%",
+    height: "100%",
     alignItems: "center",
     justifyContent: "flex-start",
     "@media (max-width: 1024px)": {
@@ -339,16 +345,16 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "20%",
     alignItems: "center",
     justifyContent: "flex-start",
-    "&:hover": {
-      cursor: "pointer",
-    },
   },
   logo: {
     display: "flex",
-    width: "80px",
+    width: "10vh",
     borderRadius: "10px 10px 10px 10px",
     "@media (max-width: 1024px)": {
-      width: "60px",
+      width: "8vh",
+    },
+    "&:hover": {
+      cursor: "pointer",
     },
   },
   divButtons: {
@@ -358,13 +364,14 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "flex-end",
   },
   links: {
+    display: "flex",
     textDecoration: "none",
     marginRight: "2rem",
     marginLeft: "0rem",
   },
   buttonLight: {
-    width: "9rem",
-    height: "4rem",
+    width: "15vh",
+    height: "7vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.black,
     color: colors.white,
@@ -381,12 +388,13 @@ const useStyles = makeStyles<DefaultTheme>({
       margin: 0,
       marginTop: "1rem",
       marginBottom: "1rem",
-      width: "13rem",
+      width: "15vh",
+      height: "7vh",
     },
   },
   buttonDark: {
-    width: "9rem",
-    height: "4rem",
+    width: "15vh",
+    height: "7vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.nav,
     color: colors.black,
@@ -403,12 +411,13 @@ const useStyles = makeStyles<DefaultTheme>({
       margin: 0,
       marginTop: "1rem",
       marginBottom: "1rem",
-      width: "13rem",
+      width: "15vh",
+      height: "7vh",
     },
   },
   buttonMenu: {
-    width: "6rem",
-    height: "3rem",
+    width: "13vh",
+    height: "5vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.black,
     color: colors.white,
@@ -423,8 +432,8 @@ const useStyles = makeStyles<DefaultTheme>({
     },
   },
   buttonMenuDark: {
-    width: "6rem",
-    height: "3rem",
+    width: "13vh",
+    height: "5vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.nav,
     color: colors.black,
@@ -439,8 +448,8 @@ const useStyles = makeStyles<DefaultTheme>({
     },
   },
   icons: {
-    width: "2rem",
-    height: "2rem",
+    width: "3vh",
+    height: "3vh",
   },
 });
 

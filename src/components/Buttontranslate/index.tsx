@@ -35,8 +35,8 @@ const ButtonLanguages = () => {
 
 const useStyles = makeStyles<DefaultTheme>({
   buttonTranslate: {
-    width: "9rem",
-    height: "4rem",
+    width: "15vh",
+    height: "7vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: "transparent",
     border: "none",
@@ -48,10 +48,10 @@ const useStyles = makeStyles<DefaultTheme>({
     },
     "@media (max-width: 1200px)": {
       margin: 0,
-      height: "4.5rem",
+      width: "15vh",
+      height: "7vh",
       marginTop: "1rem",
       marginBottom: "1rem",
-      width: "13rem",
     },
   },
   imageTranslate: {

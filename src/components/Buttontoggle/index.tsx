@@ -44,27 +44,27 @@ const useStyles = makeStyles<DefaultTheme>({
     zIndex: 5,
   },
   iconLight: {
-    width: "4rem",
-    height: "4rem",
+    width: "5vh",
+    height: "5vh",
     color: colors.nav,
     "@media (max-width: 1024px)": {
-      width: "2.5rem",
-      height: "2.5rem",
+      width: "4.5vh",
+      height: "4.5vh",
     },
   },
   iconDark: {
-    width: "4rem",
-    height: "4rem",
+    width: "5vh",
+    height: "5vh",
     color: colors.black,
     "@media (max-width: 1024px)": {
-      width: "2.5rem",
-      height: "2.5rem",
+      width: "4.5vh",
+      height: "4.5vh",
     },
   },
   button: {
     borderRadius: "50%",
-    width: "4rem",
-    height: "4rem",
+    width: "7vh",
+    height: "7vh",
     backgroundColor: colors.blue,
     transition: "background-color 1s ease",
     "&:hover": {
@@ -74,19 +74,19 @@ const useStyles = makeStyles<DefaultTheme>({
       },
     },
     "@media (max-width: 1024px)": {
-      width: "3.5rem",
-      height: "3.5rem",
+      width: "6vh",
+      height: "6vh",
     },
   },
   buttonBlack: {
     borderRadius: "50%",
-    width: "4rem",
-    height: "4rem",
+    width: "7vh",
+    height: "7vh",
     backgroundColor: colors.pink,
     transition: "background-color 1s ease",
     "@media (max-width: 1024px)": {
-      width: "3.5rem",
-      height: "3.5rem",
+      width: "6vh",
+      height: "6vh",
     },
     "&:hover": {
       backgroundColor: colors.nav,

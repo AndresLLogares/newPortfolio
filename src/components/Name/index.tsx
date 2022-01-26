@@ -54,14 +54,14 @@ const useStyles = makeStyles<DefaultTheme>({
   rootName: {
     display: "flex",
     width: "100%",
-    marginTop: "6%",
-    marginBottom: "5%",
+    marginTop: "15vh",
+    marginBottom: "5vh",
     flexDirection: "column",
     height: "fit-content",
     alignItems: "center",
     justifyContent: "center",
     "@media (max-width: 1024px)": {
-      marginTop: "10rem",
+      marginTop: "20vh",
     },
   },
   divFather: {
@@ -85,14 +85,17 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     "@media (max-width: 1024px)": {
-      marginTop: "5%",
-      marginBottom: "10%",
+      marginTop: "1rem",
+      marginBottom: "5rem",
     },
   },
   logo: {
     display: "flex",
-    width: "150px",
+    width: "20vh",
     borderRadius: "10% 10% 10% 10%",
+    "@media (max-width: 1024px)": {
+      width: "15vh",
+    },
   },
   name: {
     fontSize: "8vh",
@@ -100,7 +103,7 @@ const useStyles = makeStyles<DefaultTheme>({
     textTransform: "uppercase",
     fontWeight: "bold",
     "@media (max-width: 1024px)": {
-      fontSize: "6vh",
+      fontSize: "7vh",
     },
   },
   divSubname: {
@@ -115,7 +118,6 @@ const useStyles = makeStyles<DefaultTheme>({
     fontFamily: ["Ultra", "serif"].join(","),
     textTransform: "uppercase",
     fontWeight: 500,
-
     "@media (max-width: 1024px)": {
       fontSize: "4vh",
     },

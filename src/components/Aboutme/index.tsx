@@ -84,7 +84,7 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
   },
   divSub: {
     display: "flex",
-    width: "50%",
+    width: "60%",
     height: "fit-content",
     alignItems: "flex-start",
     justifyContent: "flex-start",
@@ -108,7 +108,7 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     },
   },
   subtitle: {
-    fontSize: "1.2rem",
+    fontSize: "2.5vh",
     fontWeight: "bold",
     fontFamily: ["Poppins", "sans-serif"].join(","),
   },
