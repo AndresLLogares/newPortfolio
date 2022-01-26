@@ -48,7 +48,7 @@ const useStyles = makeStyles<DefaultTheme>({
     },
     "@media (max-width: 1200px)": {
       margin: 0,
-      width: "15vh",
+      width: "17vh",
       height: "7vh",
       marginTop: "1rem",
       marginBottom: "1rem",
