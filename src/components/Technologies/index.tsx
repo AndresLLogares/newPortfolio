@@ -24,6 +24,7 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: "5vh",
   },
 });
 

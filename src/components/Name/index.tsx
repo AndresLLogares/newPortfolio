@@ -55,7 +55,7 @@ const useStyles = makeStyles<DefaultTheme>({
     display: "flex",
     width: "100%",
     marginTop: "15vh",
-    marginBottom: "5vh",
+    marginBottom: "7vh",
     flexDirection: "column",
     height: "fit-content",
     alignItems: "center",

@@ -35,7 +35,7 @@ const ButtonLanguages = () => {
 
 const useStyles = makeStyles<DefaultTheme>({
   buttonTranslate: {
-    width: "15vh",
+    width: "17vh",
     height: "7vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: "transparent",

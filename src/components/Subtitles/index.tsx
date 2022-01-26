@@ -25,11 +25,14 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "center",
+    margin: "0%",
+    marginBottom: "5vh",
   },
   subtitle: {
     fontSize: "5vh",
     fontFamily: ["Poppins", "sans-serif"].join(","),
     fontWeight: "bold",
+    margin: "0%",
   },
 });
 

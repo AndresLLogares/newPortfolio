@@ -135,8 +135,6 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "flex-start",
     alignItems: "center",
     width: "95%",
-    marginTop: "2%",
-    marginBottom: "5%",
     "@media (max-width: 1024px)": {
       width: "100%",
       justifyContent: "center",

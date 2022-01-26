@@ -43,9 +43,8 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     justifyContent: "flex-start",
     alignItems: "center",
     width: "95%",
-    marginTop: "2%",
-    marginBottom: "5%",
     flexDirection: "column",
+    marginBottom: "7vh",
   },
   divFather: {
     display: "flex",
@@ -55,8 +54,6 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     alignItems: "flex-start",
     justifyContent: "flex-start",
     textAlign: "start",
-    marginTop: "2%",
-    marginBottom: "5%",
     "@media (max-width: 1600px)": {
       flexDirection: "column",
       alignItems: "center",
@@ -78,8 +75,6 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
       justifyContent: "center",
       textAlign: "center",
       width: "95%",
-      marginTop: "5%",
-      marginBottom: "5%",
     },
   },
   divSub: {
@@ -96,8 +91,7 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
       justifyContent: "center",
       textAlign: "center",
       width: "95%",
-      marginTop: "5%",
-      marginBottom: "5%",
+      marginTop: "5vh",
     },
   },
   image: {
