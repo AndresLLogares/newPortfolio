@@ -19,14 +19,14 @@ const Buttontoggle = lazy(() => import("./components/Buttontoggle/index"));
 const App = () => {
   const [theme, setTheme] = useGlobalState("theme");
 
-  const [currentTheme, setCurrentTheme] = useState(darkTheme);
+  const [currentTheme, setCurrentTheme] = useState(lightTheme);
 
   const [colorTheme, setColorTheme] = useState("");
 
   useEffect(() => {
     const checkTheme = () => {
       let localTheme = window.localStorage.getItem("theme");
-      if (localTheme === undefined) {
+      if (!localTheme) {
         setCurrentTheme(lightTheme);
         setTheme("light");
         setColorTheme(lightTheme.palette.background.default);

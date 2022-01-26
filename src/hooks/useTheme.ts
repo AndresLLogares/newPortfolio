@@ -1,6 +1,6 @@
-import { createGlobalState } from 'react-hooks-global-state'
+import { createGlobalState } from "react-hooks-global-state";
 
-const initialState = { theme: 'light' }
-const { useGlobalState } = createGlobalState(initialState)
+const initialState = { theme: "light" };
+const { useGlobalState } = createGlobalState(initialState);
 
-export { useGlobalState }
+export { useGlobalState };
