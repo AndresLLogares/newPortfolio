@@ -342,7 +342,7 @@ const useStyles = makeStyles<DefaultTheme>({
   navbarTransparent: {
     display: "flex",
     backgroundColor: "transparent",
-    height: "17vh",
+    height: "12vh",
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
