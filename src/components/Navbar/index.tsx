@@ -325,7 +325,7 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     boxShadow: "none",
-    borderBottom: `5px solid ${colors.black}`,
+    borderBottom: `5px solid ${colors.blue}`,
     transition: "background-color 1s ease",
   },
   navbarDark: {
@@ -336,7 +336,7 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     boxShadow: "none",
-    borderBottom: `5px solid ${colors.nav}`,
+    borderBottom: `5px solid ${colors.pink}`,
     transition: "background-color 1s ease",
   },
   navbarTransparent: {
