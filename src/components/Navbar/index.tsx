@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { colors } from "../../styles/colors";
 import ButtonTranslate from "../Buttontranslate/index";
 import { useGlobalState } from "../../hooks/useTheme";
-import Logo from "../Name/logo.svg";
+import Logo from "../../assets/logo.svg";
 import useWindowSize from "./size";
 import { DefaultTheme } from "@material-ui/styles";
 import "./dropdown.scss";
@@ -388,8 +388,8 @@ const useStyles = makeStyles<DefaultTheme>({
       margin: 0,
       marginTop: "1rem",
       marginBottom: "1rem",
-      width: "17vh",
-      height: "7vh",
+      width: "25vh",
+      height: "9vh",
     },
   },
   buttonDark: {
@@ -411,8 +411,8 @@ const useStyles = makeStyles<DefaultTheme>({
       margin: 0,
       marginTop: "1rem",
       marginBottom: "1rem",
-      width: "17vh",
-      height: "7vh",
+      width: "25vh",
+      height: "9vh",
     },
   },
   buttonMenu: {

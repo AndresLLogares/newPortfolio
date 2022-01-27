@@ -2,9 +2,9 @@ import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 const lightTheme = {
   colorBlack: "#231b1b",
-  colorWhite: "#FBFFE2",
+  colorWhite: "#fdfffc",
   colorBlue: "#1C6DD0",
-  colorBackground: "#FBFFE2",
+  colorBackground: "#fdfffc",
 };
 
 export const light = createTheme({

@@ -2,7 +2,7 @@ import { createTheme } from "@material-ui/core/styles";
 
 const darkTheme = {
   colorBlack: "#231b1b",
-  colorWhite: "#FBFFE2",
+  colorWhite: "#fdfffc",
   colorText: "#93FFD8",
   colorBackground: "#2C272E",
 };

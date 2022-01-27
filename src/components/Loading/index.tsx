@@ -25,7 +25,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     minHeight: "100vh",
     flexDirection: "column",
     height: "fit-content",
-    backgroundColor: "#FBFFE2",
+    backgroundColor: "#fdfffc",
     alignItems: "center",
     justifyContent: "center",
   },
