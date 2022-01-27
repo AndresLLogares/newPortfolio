@@ -40,8 +40,6 @@ const Navbar = () => {
     }
   }, [width]);
 
-  console.log(scrollNow);
-
   return (
     <div>
       <AppBar
