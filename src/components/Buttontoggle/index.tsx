@@ -74,8 +74,8 @@ const useStyles = makeStyles<DefaultTheme>({
       },
     },
     "@media (max-width: 1024px)": {
-      width: "6vh",
-      height: "6vh",
+      width: "4rem",
+      height: "4rem",
     },
   },
   buttonBlack: {
@@ -85,8 +85,8 @@ const useStyles = makeStyles<DefaultTheme>({
     backgroundColor: colors.pink,
     transition: "background-color 1s ease",
     "@media (max-width: 1024px)": {
-      width: "6vh",
-      height: "6vh",
+      width: "4rem",
+      height: "4rem",
     },
     "&:hover": {
       backgroundColor: colors.nav,

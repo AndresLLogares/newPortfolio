@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { DefaultTheme } from "@material-ui/styles";
 import { Box } from "@material-ui/core";
-import useWindowSize from "../Navbar/size";
+import useWindowSize from "../utils/size";
 
 const VideoComponent = () => {
   const { width } = useWindowSize();

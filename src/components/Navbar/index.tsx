@@ -8,9 +8,9 @@ import { colors } from "../../styles/colors";
 import ButtonTranslate from "../Buttontranslate/index";
 import { useGlobalState } from "../../hooks/useTheme";
 import Logo from "../../assets/logo.svg";
-import useWindowSize from "./size";
+import useWindowSize from "../utils/size";
 import { DefaultTheme } from "@material-ui/styles";
-import scroll from "./scroll";
+import scroll from "../utils/scroll";
 import "./dropdown.scss";
 
 const Navbar = () => {
