@@ -7,14 +7,12 @@ import { DefaultTheme } from "@material-ui/styles";
 import { useTheme } from "@material-ui/core/styles";
 import Loading from "../Loading/index";
 import { colors } from "../../styles/colors";
-import { useGlobalState } from "../../hooks/useTheme";
 const VideoComponent = lazy(() => import("../video/index"));
 
 const Name = () => {
   let colorTheme: any = useTheme();
   colorTheme = colorTheme.palette.primary.main;
   const classes = useStyles({ colorTheme });
-  const [theme] = useGlobalState("theme");
   const { t } = useTranslation("global");
 
   return (
@@ -55,7 +53,6 @@ const useStyles = makeStyles<DefaultTheme>({
     marginTop: "10vh",
     marginBottom: "7vh",
     flexDirection: "column",
-    /* height: "fit-content", */
     alignItems: "center",
     justifyContent: "center",
     zIndex: 1,

@@ -21,23 +21,18 @@ const App = () => {
 
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
 
-  const [colorTheme, setColorTheme] = useState("");
-
   useEffect(() => {
     const checkTheme = () => {
       let localTheme = window.localStorage.getItem("theme");
       if (!localTheme) {
         setCurrentTheme(lightTheme);
         setTheme("light");
-        setColorTheme(lightTheme.palette.background.default);
       } else if (localTheme === "light") {
         setTheme("light");
         setCurrentTheme(lightTheme);
-        setColorTheme(lightTheme.palette.background.default);
       } else {
         setTheme("dark");
         setCurrentTheme(darkTheme);
-        setColorTheme(darkTheme.palette.background.default);
       }
     };
     checkTheme();

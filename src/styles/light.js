@@ -7,17 +7,19 @@ const lightTheme = {
   colorBackground: "#fdfffc",
 };
 
-export const light = createTheme({
-  palette: {
-    type: "light",
-    primary: {
-      main: lightTheme.colorBlack,
+export const light = responsiveFontSizes(
+  createTheme({
+    palette: {
+      type: "light",
+      primary: {
+        main: lightTheme.colorBlack,
+      },
+      secondary: {
+        main: lightTheme.colorWhite,
+      },
+      background: {
+        default: lightTheme.colorBackground,
+      },
     },
-    secondary: {
-      main: lightTheme.colorWhite,
-    },
-    background: {
-      default: lightTheme.colorBackground,
-    },
-  },
-});
+  })
+);
