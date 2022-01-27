@@ -10,10 +10,17 @@ import { useGlobalState } from "../../hooks/useTheme";
 import Logo from "../../assets/logo.svg";
 import useWindowSize from "./size";
 import { DefaultTheme } from "@material-ui/styles";
+import scroll from "./scroll";
 import "./dropdown.scss";
 
 const Navbar = () => {
   const classes = useStyles();
+
+  const scrollNow = scroll();
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const [navbarEffect, setNavbarEffect] = useState("navbarTransparent");
 
   const [theme] = useGlobalState("theme");
 
@@ -37,11 +44,19 @@ const Navbar = () => {
     }
   }, [width]);
 
+  console.log(scrollNow);
+
   return (
     <div>
       <AppBar
         position="fixed"
-        className={theme === "light" ? classes.navbarLight : classes.navbarDark}
+        className={
+          scrollNow === 0
+            ? classes.navbarTransparent
+            : theme === "dark"
+            ? classes.navbarDark
+            : classes.navbarLight
+        }
       >
         <Toolbar className={classes.toolbar}>
           <div className={classes.divLogo}>
@@ -328,6 +343,17 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     boxShadow: "none",
     borderBottom: `5px solid ${colors.nav}`,
+    transition: "background-color 1s ease",
+  },
+  navbarTransparent: {
+    display: "flex",
+    backgroundColor: "transparent",
+    height: "17vh",
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "none",
+    borderBottom: `5px solid transparent`,
     transition: "background-color 1s ease",
   },
   toolbar: {
