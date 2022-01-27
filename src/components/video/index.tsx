@@ -21,7 +21,7 @@ const VideoComponent = () => {
       position: "absolute",
       top: "0vh",
       "@media (max-width: 1024px)": {
-        height: "100vh",
+        height: "120vh",
         width: "100vw",
       },
     },
