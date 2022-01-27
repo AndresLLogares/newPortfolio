@@ -18,10 +18,6 @@ const Navbar = () => {
 
   const scrollNow = scroll();
 
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const [navbarEffect, setNavbarEffect] = useState("navbarTransparent");
-
   const [theme] = useGlobalState("theme");
 
   const { t } = useTranslation("global");
