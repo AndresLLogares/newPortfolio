@@ -25,7 +25,7 @@ const SocialMedia = () => {
           style={{ textDecoration: "none" }}
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1JcWVsJkDIw-iFITPQGex8qwI5aLwv4ky/view?usp=sharing"
+          href="https://drive.google.com/file/d/1jkP_jCG66JDquoF5S_2Xm7YdkRo0C2gz/view?usp=sharing"
         >
           <button
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
@@ -47,7 +47,7 @@ const SocialMedia = () => {
           style={{ textDecoration: "none" }}
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/10MLP4tvDM8QXsBwxPAIuTVqglq-8Zk12/view?usp=sharing"
+          href="https://drive.google.com/file/d/1s0Laq1mXXjft1YuLv1j38bLtOohk8zXK/view?usp=sharing"
         >
           <button
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}

@@ -318,7 +318,7 @@ const useStyles = makeStyles<DefaultTheme>({
   root: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: "center",
     width: "95%",
     "@media (max-width: 1024px)": {
@@ -327,13 +327,13 @@ const useStyles = makeStyles<DefaultTheme>({
     },
   },
   icons: {
-    width: "6vh",
-    height: "6vh",
+    width: "6rem",
+    height: "6rem",
     color: colors.blue,
   },
   iconsDark: {
-    width: "6vh",
-    height: "6vh",
+    width: "6rem",
+    height: "6rem",
     color: colors.pink,
   },
   mas: {
@@ -344,7 +344,7 @@ const useStyles = makeStyles<DefaultTheme>({
     fontFamily: ["Poppins", "sans-serif"].join(","),
     fontWeight: "bold",
     fontSize: "3vh",
-    marginTop: "0.6rem",
+    marginTop: "2rem",
     overflow: "hidden",
   },
 });
