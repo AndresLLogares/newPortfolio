@@ -48,11 +48,11 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
   },
   divFather: {
     display: "flex",
-    width: "95%",
+    width: "100%",
     height: "fit-content",
     flexDirection: "row",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
     textAlign: "start",
     "@media (max-width: 1600px)": {
       flexDirection: "column",
@@ -65,8 +65,8 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     display: "flex",
     width: "40%",
     height: "fit-content",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
     flexDirection: "column",
     textAlign: "start",
     "@media (max-width: 1600px)": {

@@ -88,6 +88,8 @@ const SocialMedia = () => {
       </div>
       <div className={classes.container}>
         <a
+          target="_blank"
+          rel="noreferrer"
           style={{ textDecoration: "none" }}
           href="mailto:andresl940@hotmail.com"
         >
@@ -176,6 +178,9 @@ const useStyles = makeStyles<DefaultTheme>({
     textAlign: "center",
     width: "20rem",
     margin: "4vh",
+    "@media (max-width: 1024px)": {
+      width: "90%",
+    },
   },
   text: {
     fontFamily: ["Poppins", "sans-serif"].join(","),
@@ -185,6 +190,9 @@ const useStyles = makeStyles<DefaultTheme>({
     fontWeight: "bold",
     color: colors.black,
     marginTop: "1rem",
+    "@media (max-width: 1024px)": {
+      fontSize: "2vh",
+    },
   },
   textDark: {
     fontFamily: ["Poppins", "sans-serif"].join(","),
@@ -194,6 +202,9 @@ const useStyles = makeStyles<DefaultTheme>({
     fontWeight: "bold",
     color: colors.nav,
     marginTop: "1rem",
+    "@media (max-width: 1024px)": {
+      fontSize: "2vh",
+    },
   },
   icons: {
     width: "6vh",
