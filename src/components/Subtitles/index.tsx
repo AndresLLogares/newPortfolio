@@ -33,6 +33,9 @@ const useStyles = makeStyles<DefaultTheme>({
     fontFamily: ["Poppins", "sans-serif"].join(","),
     fontWeight: "bold",
     margin: "0%",
+    "@media (max-width: 1600px)": {
+      fontSize: "4vh",
+    },
   },
 });
 

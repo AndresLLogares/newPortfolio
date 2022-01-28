@@ -3,18 +3,18 @@ import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
 import Quotes from "./recommendations";
 import Carlos from "../../assets/carlos.jpeg";
+import { useTranslation } from "react-i18next";
 
 const Recommendations = () => {
   const classes = useStyles();
+  const { t } = useTranslation("global");
 
   return (
     <div id="Recommendations" className={classes.rootRecommendations}>
-      <Subtitle title="Recommendations" />
+      <Subtitle title={t("Recommendations.first")} />
       <Quotes
         name={"Carlos Benetti"}
-        recommendations={
-          "Andrés is amazing at his job! He knows his way around people, does whatever it takes to help colleagues. His expertise as developer is considerable and it helped our team to come up with more efficient solutions and develop different projects. Andrés would become an appreciated member of any team."
-        }
+        recommendations={t("Recommendations.second")}
         image={Carlos}
       />
     </div>
