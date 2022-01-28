@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
-import Spain from "../../assets/spain.webp";
-import English from "../../assets/english.webp";
+import Spain from "../../assets/spain.svg";
+import English from "../../assets/english.svg";
 import { DefaultTheme } from "@material-ui/styles";
 
 const ButtonLanguages = () => {
@@ -35,7 +35,7 @@ const ButtonLanguages = () => {
 
 const useStyles = makeStyles<DefaultTheme>({
   buttonTranslate: {
-    width: "17vh",
+    width: "10vh",
     height: "7vh",
     borderRadius: "10px 10px 10px 10px",
     backgroundColor: "transparent",
