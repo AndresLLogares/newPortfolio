@@ -3,6 +3,7 @@ import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { Phone } from "@styled-icons/boxicons-regular/Phone";
 import { Email } from "@styled-icons/evaicons-solid/Email";
+import { Discord } from "@styled-icons/fa-brands/Discord";
 import { TextDocument } from "@styled-icons/entypo/TextDocument";
 import { colors } from "../../styles/colors";
 import { useGlobalState } from "../../hooks/useTheme";
@@ -127,6 +128,28 @@ const SocialMedia = () => {
             className={theme === "light" ? classes.text : classes.textDark}
           >
             Github
+          </Typography>
+        </a>
+      </div>
+      <div className={classes.container}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none" }}
+          href="https://discord.com/"
+        >
+          <button
+            className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
+            type="button"
+          >
+            <Discord
+              className={theme === "light" ? classes.icons : classes.iconsDark}
+            />
+          </button>
+          <Typography
+            className={theme === "light" ? classes.text : classes.textDark}
+          >
+            AndresLogares#6764
           </Typography>
         </a>
       </div>
