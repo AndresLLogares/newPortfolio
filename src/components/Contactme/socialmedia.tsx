@@ -8,7 +8,7 @@ import { colors } from "../../styles/colors";
 import { useGlobalState } from "../../hooks/useTheme";
 import { useTranslation } from "react-i18next";
 import { DefaultTheme } from "@material-ui/styles";
-import { Button, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import "./buttons.scss";
 
 const SocialMedia = () => {
