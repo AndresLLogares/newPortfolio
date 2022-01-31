@@ -30,6 +30,7 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     marginBottom: "5vh",
+    zIndex: 1,
   },
 });
 

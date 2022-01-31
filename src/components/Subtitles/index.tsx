@@ -27,6 +27,7 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     margin: "0%",
     marginBottom: "5vh",
+    zIndex: 1,
   },
   subtitle: {
     fontSize: "5vh",

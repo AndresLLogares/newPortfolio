@@ -327,6 +327,7 @@ const useStyles = makeStyles<DefaultTheme>({
     boxShadow: "none",
     borderBottom: `5px solid ${colors.blue}`,
     transition: "background-color 1s ease",
+    zIndex: 3,
   },
   navbarDark: {
     display: "flex",
@@ -338,6 +339,7 @@ const useStyles = makeStyles<DefaultTheme>({
     boxShadow: "none",
     borderBottom: `5px solid ${colors.pink}`,
     transition: "background-color 1s ease",
+    zIndex: 3,
   },
   navbarTransparent: {
     display: "flex",
@@ -349,6 +351,7 @@ const useStyles = makeStyles<DefaultTheme>({
     boxShadow: "none",
     borderBottom: `5px solid transparent`,
     transition: "background-color 1s ease",
+    zIndex: 3,
   },
   toolbar: {
     display: "flex",

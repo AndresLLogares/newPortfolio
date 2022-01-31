@@ -13,6 +13,7 @@ const VideoComponent = () => {
       height: "fit-content",
       alignItems: "center",
       justifyContent: "center",
+      zIndex: 1,
     },
     video: {
       objectFit: "cover",

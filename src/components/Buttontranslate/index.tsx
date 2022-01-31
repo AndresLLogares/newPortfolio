@@ -42,7 +42,6 @@ const useStyles = makeStyles<DefaultTheme>({
     border: "none",
     alignItems: "center",
     justifyContent: "center",
-    zIndex: 2,
     "&:hover": {
       cursor: "pointer",
     },

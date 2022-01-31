@@ -32,6 +32,7 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
+    zIndex: 2,
   },
   container: {
     display: "flex",

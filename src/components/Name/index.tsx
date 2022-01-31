@@ -55,7 +55,6 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    zIndex: 1,
     "@media (max-width: 1024px)": {
       marginTop: "15vh",
       height: "100vh",
@@ -68,7 +67,7 @@ const useStyles = makeStyles<DefaultTheme>({
     height: "fit-content",
     alignItems: "center",
     justifyContent: "center",
-    zIndex: 1,
+    zIndex: 2,
     "@media (max-width: 1024px)": {
       flexDirection: "column",
       width: "100%",
@@ -82,7 +81,6 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    zIndex: 1,
     "@media (max-width: 1024px)": {
       marginTop: "1rem",
       marginBottom: "5rem",
@@ -92,7 +90,6 @@ const useStyles = makeStyles<DefaultTheme>({
     display: "flex",
     width: "20vh",
     borderRadius: "10% 10% 10% 10%",
-    zIndex: 1,
     "@media (max-width: 1024px)": {
       width: "15vh",
     },
@@ -103,7 +100,6 @@ const useStyles = makeStyles<DefaultTheme>({
     textTransform: "uppercase",
     fontWeight: "bold",
     color: colors.black,
-    zIndex: 1,
     textShadow: `1px 1px ${colors.nav}, -1px 1px 0 ${colors.nav}, 1px -1px 0 ${colors.nav},
       -1px -1px 0 ${colors.nav}, 0px 1px 0 ${colors.nav}, 0px -1px 0 ${colors.nav}, -1px 0px 0 ${colors.nav},
       1px 0px 0 ${colors.nav}, 2px 2px 0 ${colors.nav}, -2px 2px 0 ${colors.nav}, 2px -2px 0 ${colors.nav},
@@ -121,14 +117,13 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    zIndex: 1,
+    zIndex: 2,
   },
   subtitle: {
     fontSize: "6vh",
     fontFamily: ["Ultra", "serif"].join(","),
     textTransform: "uppercase",
     fontWeight: 500,
-    zIndex: 1,
     color: colors.black,
     textShadow: `1px 1px ${colors.nav}, -1px 1px 0 ${colors.nav}, 1px -1px 0 ${colors.nav},
     -1px -1px 0 ${colors.nav}, 0px 1px 0 ${colors.nav}, 0px -1px 0 ${colors.nav}, -1px 0px 0 ${colors.nav},

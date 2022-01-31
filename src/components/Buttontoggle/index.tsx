@@ -41,7 +41,7 @@ const useStyles = makeStyles<DefaultTheme>({
     position: "fixed",
     right: "5%",
     top: "15%",
-    zIndex: 5,
+    zIndex: 3,
   },
   iconLight: {
     width: "5vh",
