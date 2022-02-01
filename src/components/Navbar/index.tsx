@@ -372,7 +372,6 @@ const useStyles = makeStyles<DefaultTheme>({
   logo: {
     display: "flex",
     width: "10vh",
-    borderRadius: "10px 10px 10px 10px",
     "@media (max-width: 1024px)": {
       width: "8vh",
     },
@@ -395,12 +394,12 @@ const useStyles = makeStyles<DefaultTheme>({
   buttonLight: {
     width: "17vh",
     height: "7vh",
-    borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.black,
     color: colors.white,
     fontFamily: ["Poppins", "sans-serif"].join(","),
     textTransform: "none",
     fontWeight: "bold",
+    borderRadius: "0px",
     fontSize: "2vh",
     border: `transparent`,
     "&:hover": {
@@ -418,11 +417,11 @@ const useStyles = makeStyles<DefaultTheme>({
   buttonDark: {
     width: "17vh",
     height: "7vh",
-    borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.nav,
     color: colors.black,
     fontFamily: ["Poppins", "sans-serif"].join(","),
     textTransform: "none",
+    borderRadius: "0px",
     fontWeight: "bold",
     fontSize: "2vh",
     border: `transparent`,
@@ -441,7 +440,6 @@ const useStyles = makeStyles<DefaultTheme>({
   buttonMenu: {
     width: "13vh",
     height: "6vh",
-    borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.black,
     color: colors.white,
     fontFamily: ["Poppins", "sans-serif"].join(","),
@@ -457,7 +455,6 @@ const useStyles = makeStyles<DefaultTheme>({
   buttonMenuDark: {
     width: "13vh",
     height: "6vh",
-    borderRadius: "10px 10px 10px 10px",
     backgroundColor: colors.nav,
     color: colors.black,
     fontFamily: ["Poppins", "sans-serif"].join(","),

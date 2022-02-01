@@ -3,6 +3,7 @@ $Black: #231b1b;
 $Grey: #fdfffc;
 $Blue: #1c6dd0;
 $pink: #ed0b70;
+
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&display=swap");
 @mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
   background: $bcolor;
@@ -40,7 +41,7 @@ $pink: #ed0b70;
 
 .buttonContainer {
   position: relative;
-  width: 10%;
+  width: 20vh;
   height: 20vh;
   overflow: hidden;
   border: transparent;
@@ -75,7 +76,7 @@ $pink: #ed0b70;
 
 .buttonContainerDark {
   position: relative;
-  width: 10%;
+  width: 20vh;
   height: 20vh;
   overflow: hidden;
   border: transparent;

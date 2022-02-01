@@ -5,19 +5,26 @@ import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
 import Image from "../../assets/about.webp";
 import { useTheme } from "@material-ui/core/styles";
+import { colors } from "../../styles/colors";
+import { useGlobalState } from "../../hooks/useTheme";
 
 const AboutMe = () => {
   let colorTheme: any = useTheme();
   colorTheme = colorTheme.palette.primary.main;
   const classes = useStyles({ colorTheme });
   const { t } = useTranslation("global");
+  const [theme] = useGlobalState("theme");
 
   return (
     <div id="aboutme" className={classes.rootAboutMe}>
       <Subtitle title={t("titles.about-me")} />
       <div className={classes.divFather}>
         <div className={classes.divChildren}>
-          <img src={Image} alt="about" className={classes.image} />
+          <img
+            src={Image}
+            alt="about"
+            className={theme === "light" ? classes.image : classes.imageDark}
+          />
         </div>{" "}
         <div className={classes.divSub}>
           <Typography
@@ -66,7 +73,7 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     display: "flex",
     width: "40%",
     height: "fit-content",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "center",
     flexDirection: "column",
     textAlign: "start",
@@ -96,9 +103,20 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     },
   },
   image: {
-    width: "500px",
-    borderRadius: "10px 10px 10px 10px",
+    width: "450px",
+    marginLeft: "4.5vw",
+    border: `5px solid ${colors.blue}`,
     "@media (max-width: 1024px)": {
+      marginLeft: "0",
+      width: "80%",
+    },
+  },
+  imageDark: {
+    width: "450px",
+    marginLeft: "4.5vw",
+    border: `5px solid ${colors.pink}`,
+    "@media (max-width: 1024px)": {
+      marginLeft: "0",
       width: "80%",
     },
   },
