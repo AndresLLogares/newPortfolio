@@ -15,7 +15,7 @@ const AboutMe = () => {
 
   return (
     <div id="aboutme" className={classes.rootAboutMe}>
-      <Octagon />
+      {/*     <Octagon /> */}
       <Subtitle title={t("titles.about-me")} />
       <div className={classes.divFather}>
         <div className={classes.divChildren}>

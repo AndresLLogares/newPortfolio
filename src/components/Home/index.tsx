@@ -7,7 +7,7 @@ import OctagonSecond from "../Octagons/second";
 
 const Home = () => (
   <>
-    <OctagonSecond />
+    {/*   <OctagonSecond /> */}
     <Name />
     <AboutMe />
     <Technologies />
