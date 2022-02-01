@@ -22,6 +22,7 @@ import { Solidity } from "@styled-icons/simple-icons/Solidity";
 import { colors } from "../../styles/colors";
 import { useGlobalState } from "../../hooks/useTheme";
 import { DefaultTheme } from "@material-ui/styles";
+import { LogoDocker } from "@styled-icons/ionicons-solid/LogoDocker";
 import "./icon.scss";
 
 const Icons = () => {
@@ -308,6 +309,20 @@ const Icons = () => {
         </span>
         <button type="button" name="Hover">
           Solidity
+        </button>
+      </div>
+      <div
+        className={
+          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+        }
+      >
+        <span className={classes.mas}>
+          <LogoDocker
+            className={theme === "light" ? classes.icons : classes.iconsDark}
+          />
+        </span>
+        <button type="button" name="Hover">
+          Docker
         </button>
       </div>
     </div>
