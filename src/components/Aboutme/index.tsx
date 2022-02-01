@@ -5,7 +5,6 @@ import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
 import Image from "../../assets/about.webp";
 import { useTheme } from "@material-ui/core/styles";
-import Octagon from "../Octagons/first";
 
 const AboutMe = () => {
   let colorTheme: any = useTheme();
@@ -15,7 +14,6 @@ const AboutMe = () => {
 
   return (
     <div id="aboutme" className={classes.rootAboutMe}>
-      {/*     <Octagon /> */}
       <Subtitle title={t("titles.about-me")} />
       <div className={classes.divFather}>
         <div className={classes.divChildren}>

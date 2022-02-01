@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useGlobalState } from "../../hooks/useTheme";
 import { colors } from "../../styles/colors";
 
-const First = () => {
+const Third = () => {
   const classes = useStyles();
   const [theme] = useGlobalState("theme");
 
@@ -30,7 +30,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
   },
   icon: {
     position: "absolute",
-    top: "1000px",
+    top: "2300px",
     right: "10%",
     zIndex: 0,
     transform: "rotate(15deg)",
@@ -41,7 +41,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
   },
   iconDark: {
     position: "absolute",
-    top: "1000px",
+    top: "2300px",
     right: "10%",
     zIndex: 0,
     transform: "rotate(15deg)",
@@ -51,4 +51,4 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     opacity: 0.3,
   },
 }));
-export default First;
+export default Third;

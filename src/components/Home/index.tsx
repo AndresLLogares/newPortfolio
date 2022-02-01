@@ -4,10 +4,14 @@ import Technologies from "../Technologies/index";
 import ContactMe from "../Contactme/index";
 import Recommendations from "../Recommendations/index";
 import OctagonSecond from "../Octagons/second";
+import OctagonFirst from "../Octagons/first";
+import OctagonThird from "../Octagons/third";
 
 const Home = () => (
   <>
-    {/*   <OctagonSecond /> */}
+    <OctagonFirst />
+    <OctagonSecond />
+    <OctagonThird />
     <Name />
     <AboutMe />
     <Technologies />
