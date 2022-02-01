@@ -1,5 +1,5 @@
 import { DefaultTheme } from "@material-ui/styles";
-import { OctagonFill } from "@styled-icons/bootstrap/OctagonFill";
+import { HexagonFill } from "@styled-icons/bootstrap/HexagonFill";
 import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useGlobalState } from "../../hooks/useTheme";
@@ -11,7 +11,7 @@ const Third = () => {
 
   return (
     <Box className={classes.root}>
-      <OctagonFill
+      <HexagonFill
         className={theme === "light" ? classes.icon : classes.iconDark}
       />
     </Box>
