@@ -12,6 +12,7 @@ import useWindowSize from "../utils/size";
 import { DefaultTheme } from "@material-ui/styles";
 import scroll from "../utils/scroll";
 import "./dropdown.scss";
+import opacity from "material-ui/svg-icons/action/opacity";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -325,7 +326,7 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     boxShadow: "none",
-    borderBottom: `5px solid ${colors.blue}`,
+    borderBottom: `5px solid ${colors.blue} `,
     transition: "background-color 1s ease",
     zIndex: 3,
   },

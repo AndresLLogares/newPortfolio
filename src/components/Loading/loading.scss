@@ -180,3 +180,9 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .cssload-thecube {
+    margin-top: -150px;
+  }
+}

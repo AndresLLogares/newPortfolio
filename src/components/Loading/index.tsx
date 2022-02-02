@@ -32,8 +32,13 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
   container: {
     display: "flex",
     width: "100%",
+    height: "100%",
     alignItems: "center",
     justifyContent: "center",
+    "@media (max-width: 1024px)": {
+      alignItems: "flex-start",
+      justifyContent: "flex-start",
+    },
   },
 }));
 export default Loading;
