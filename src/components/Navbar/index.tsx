@@ -332,7 +332,7 @@ const useStyles = makeStyles<DefaultTheme>({
   },
   navbarDark: {
     display: "flex",
-    backgroundColor: colors.grey,
+    backgroundColor: colors.black,
     height: "12vh",
     width: "100%",
     alignItems: "center",

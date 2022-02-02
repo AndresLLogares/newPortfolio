@@ -72,7 +72,7 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     minHeight: "100vh",
     flexDirection: "column",
     height: "fit-content",
-    backgroundColor: colors.grey,
+    backgroundColor: colors.black,
     transition: "background-color 1s ease",
   },
   root: {

@@ -3,7 +3,7 @@ $White: #ffffff;
 $Black: #231b1b;
 $Nav: #fdfffc;
 $Grey: #2c272e;
-$pink: #ed0b70;
+$pink: #fa4eab;
 
 .none {
   display: flex;
@@ -33,7 +33,7 @@ $pink: #ed0b70;
   justify-content: center;
   height: fit-content;
   top: 12vh;
-  background-color: $Grey;
+  background-color: $Black;
   border: 5px solid $pink;
   box-shadow: none;
   z-index: 2;
@@ -82,7 +82,7 @@ $pink: #ed0b70;
   width: 95%;
   height: fit-content;
   top: 12vh;
-  background-color: $Grey;
+  background-color: $Black;
   border: solid 5px $pink;
   box-shadow: none;
   z-index: 2;

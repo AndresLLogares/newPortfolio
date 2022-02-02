@@ -52,7 +52,7 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: colors.grey,
+    backgroundColor: colors.black,
     borderTop: `5px solid ${colors.pink}`,
     transition: "background-color 1s ease",
   },

@@ -7,6 +7,7 @@ import Image from "../../assets/about.webp";
 import { useTheme } from "@material-ui/core/styles";
 import { colors } from "../../styles/colors";
 import { useGlobalState } from "../../hooks/useTheme";
+import { urlsSVG } from "../../styles/urls";
 
 const AboutMe = () => {
   let colorTheme: any = useTheme();
@@ -16,7 +17,12 @@ const AboutMe = () => {
   const [theme] = useGlobalState("theme");
 
   return (
-    <div id="aboutme" className={classes.rootAboutMe}>
+    <div
+      id="aboutme"
+      className={
+        theme === "light" ? classes.rootAboutMe : classes.rootAboutMeDark
+      }
+    >
       <Subtitle title={t("titles.about-me")} />
       <div className={classes.divFather}>
         <div className={classes.divChildren}>
@@ -52,6 +58,18 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
     width: "95%",
     flexDirection: "column",
     marginBottom: "7vh",
+    transition: "background-image 0.5s ease",
+    backgroundImage: `${urlsSVG.light}`,
+  },
+  rootAboutMeDark: {
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    width: "95%",
+    flexDirection: "column",
+    marginBottom: "7vh",
+    transition: "background-image 0.5s ease",
+    backgroundImage: `${urlsSVG.dark}`,
   },
   divFather: {
     display: "flex",
