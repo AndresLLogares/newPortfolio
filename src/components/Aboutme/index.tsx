@@ -98,7 +98,7 @@ const useStyles = makeStyles<DefaultTheme>(() => ({
       alignItems: "center",
       justifyContent: "center",
       textAlign: "center",
-      width: "95%",
+      width: "90%",
       marginTop: "5vh",
     },
   },

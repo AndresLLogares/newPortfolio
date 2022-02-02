@@ -111,13 +111,19 @@ $pink: #ed0b70;
 
 @media (max-width: 1024px) {
   .buttonContainer {
-    width: 25vh;
-    height: 25vh;
+    width: 20vh;
+    height: 20vh;
     margin: 3%;
+    button {
+      font-size: 2.5vh;
+    }
   }
   .buttonContainerDark {
-    width: 25vh;
-    height: 25vh;
+    width: 20vh;
+    height: 20vh;
     margin: 3%;
+    button {
+      font-size: 2.5vh;
+    }
   }
 }

@@ -345,11 +345,19 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "6rem",
     height: "6rem",
     color: colors.blue,
+    "@media (max-width: 1024px)": {
+      width: "4.5rem",
+      height: "4.5rem",
+    },
   },
   iconsDark: {
     width: "6rem",
     height: "6rem",
     color: colors.pink,
+    "@media (max-width: 1024px)": {
+      width: "4.5rem",
+      height: "4.5rem",
+    },
   },
   mas: {
     position: "absolute",
@@ -361,6 +369,9 @@ const useStyles = makeStyles<DefaultTheme>({
     fontSize: "3vh",
     marginTop: "2rem",
     overflow: "hidden",
+    "@media (max-width: 1024px)": {
+      fontSize: "2.5vh",
+    },
   },
 });
 
