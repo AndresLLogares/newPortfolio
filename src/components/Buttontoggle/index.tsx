@@ -47,7 +47,7 @@ const ButtonSwap = () => {
       },
     },
     button: {
-      borderRadius: "50%",
+      borderRadius: "100%",
       width: "7vh",
       height: "7vh",
       backgroundColor: colors.palette.secondary.main,
