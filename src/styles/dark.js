@@ -1,10 +1,10 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 const darkTheme = {
-  colorBlack: "#231b1b",
-  colorWhite: "#fdfffc",
-  colorText: "#93FFD8",
-  colorBackground: "#2C272E",
+  text: "#fdfffc",
+  icons: "#FA4EAB",
+  background: "#231b1b",
+  contrast: "#1C6DD0",
 };
 
 export const dark = responsiveFontSizes(
@@ -12,13 +12,16 @@ export const dark = responsiveFontSizes(
     palette: {
       type: "dark",
       primary: {
-        main: darkTheme.colorWhite,
+        main: darkTheme.text,
       },
       secondary: {
-        main: darkTheme.colorBlack,
+        main: darkTheme.icons,
+      },
+      common: {
+        main: darkTheme.contrast,
       },
       background: {
-        default: darkTheme.colorBackground,
+        default: darkTheme.background,
       },
     },
   })

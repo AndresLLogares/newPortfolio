@@ -1,61 +1,57 @@
+import { useState, useEffect } from "react";
+import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 import SocialMedia from "./socialmedia";
 import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
-import { useGlobalState } from "../../hooks/useTheme";
-import { colors } from "../../styles/colors";
 
 const ContactMe = () => {
-  const classes = useStyles();
+  let colorTheme: any = useTheme();
+  const [colors, setColors] = useState<any>(colorTheme);
+
+  useEffect(() => {
+    const changeColor = () => {
+      setColors(colorTheme);
+    };
+    changeColor();
+  }, [colorTheme]);
+
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
+
+  const useStyles = makeStyles<DefaultTheme>({
+    rootContactMe: {
+      display: "flex",
+      width: "100%",
+      height: "fit-content",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      zIndex: 2,
+    },
+    container: {
+      display: "flex",
+      width: "100%",
+      height: "fit-content",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      borderTop: `5px solid`,
+      borderColor: colors.palette.secondary.main,
+      transition: "background-color 1s ease",
+    },
+  });
+
+  const classes = useStyles();
 
   return (
     <div id="contactme" className={classes.rootContactMe}>
       <Subtitle title={t("titles.Contact")} />
-      <div
-        className={
-          theme === "light" ? classes.container : classes.containerDark
-        }
-      >
+      <div className={classes.container}>
         <SocialMedia />
       </div>
     </div>
   );
 };
-const useStyles = makeStyles<DefaultTheme>({
-  rootContactMe: {
-    display: "flex",
-    width: "100%",
-    height: "fit-content",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    zIndex: 2,
-  },
-  container: {
-    display: "flex",
-    width: "100%",
-    height: "fit-content",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: colors.nav,
-    borderTop: `5px solid ${colors.blue}`,
-    transition: "background-color 1s ease",
-  },
-  containerDark: {
-    display: "flex",
-    width: "100%",
-    height: "fit-content",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: colors.black,
-    borderTop: `5px solid ${colors.pink}`,
-    transition: "background-color 1s ease",
-  },
-});
 
 export default ContactMe;

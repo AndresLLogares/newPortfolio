@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import { LogoReact } from "@styled-icons/ionicons-solid/LogoReact";
 import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
@@ -19,13 +21,55 @@ import { Blockchaindotcom } from "@styled-icons/simple-icons/Blockchaindotcom";
 import { Materialui } from "@styled-icons/simple-icons/Materialui";
 import { HardHat } from "@styled-icons/fa-solid/HardHat";
 import { Solidity } from "@styled-icons/simple-icons/Solidity";
-import { colors } from "../../styles/colors";
 import { useGlobalState } from "../../hooks/useTheme";
 import { DefaultTheme } from "@material-ui/styles";
 import { LogoDocker } from "@styled-icons/ionicons-solid/LogoDocker";
 import "./icon.scss";
 
 const Icons = () => {
+  let colorTheme: any = useTheme();
+  const [colors, setColors] = useState<any>(colorTheme);
+
+  useEffect(() => {
+    const changeColor = () => {
+      setColors(colorTheme);
+    };
+    changeColor();
+  }, [colorTheme]);
+
+  const useStyles = makeStyles<DefaultTheme>({
+    root: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "95%",
+      "@media (max-width: 1024px)": {
+        width: "100%",
+        justifyContent: "center",
+      },
+    },
+    icons: {
+      width: "6rem",
+      height: "6rem",
+      color: colors.palette.secondary.main,
+      "@media (max-width: 1024px)": {
+        width: "4.5rem",
+        height: "4.5rem",
+      },
+    },
+    mas: {
+      position: "absolute",
+      textAlign: "center",
+      width: "101%",
+      marginTop: "2rem",
+      overflow: "hidden",
+      "@media (max-width: 1024px)": {
+        fontSize: "2.5vh",
+      },
+    },
+  });
+
   const classes = useStyles();
   const [theme] = useGlobalState("theme");
 
@@ -37,9 +81,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <LogoReact
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <LogoReact className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           React
@@ -51,9 +93,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Javascript
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Javascript className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Javascript
@@ -65,9 +105,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Express
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Express className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Express
@@ -79,9 +117,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Sequelize
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Sequelize className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Sequelize
@@ -93,9 +129,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Redux
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Redux className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Redux
@@ -107,9 +141,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Html5
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Html5 className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           HTML
@@ -121,9 +153,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Css3
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Css3 className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           CSS
@@ -135,9 +165,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Graphql
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Graphql className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           GraphQl
@@ -149,9 +177,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Apollographql
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Apollographql className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Apollo
@@ -163,9 +189,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Mongodb
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Mongodb className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           MongoDB
@@ -177,9 +201,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Nodejs
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Nodejs className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Node
@@ -191,9 +213,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Scrumalliance
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Scrumalliance className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Scrum
@@ -205,9 +225,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Nextdotjs
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Nextdotjs className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Next.js
@@ -219,9 +237,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Typescript
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Typescript className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Typescript
@@ -233,9 +249,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Ethereum
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Ethereum className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Ethereum
@@ -247,9 +261,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Gatsby
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Gatsby className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Gatsby
@@ -261,9 +273,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Blockchaindotcom
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Blockchaindotcom className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Blockchain
@@ -275,9 +285,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Materialui
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Materialui className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Material UI
@@ -289,9 +297,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <HardHat
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <HardHat className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           HardHat
@@ -303,9 +309,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <Solidity
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <Solidity className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Solidity
@@ -317,9 +321,7 @@ const Icons = () => {
         }
       >
         <span className={classes.mas}>
-          <LogoDocker
-            className={theme === "light" ? classes.icons : classes.iconsDark}
-          />
+          <LogoDocker className={classes.icons} />
         </span>
         <button type="button" name="Hover">
           Docker
@@ -328,51 +330,5 @@ const Icons = () => {
     </div>
   );
 };
-
-const useStyles = makeStyles<DefaultTheme>({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "95%",
-    "@media (max-width: 1024px)": {
-      width: "100%",
-      justifyContent: "center",
-    },
-  },
-  icons: {
-    width: "6rem",
-    height: "6rem",
-    color: colors.blue,
-    "@media (max-width: 1024px)": {
-      width: "4.5rem",
-      height: "4.5rem",
-    },
-  },
-  iconsDark: {
-    width: "6rem",
-    height: "6rem",
-    color: colors.pink,
-    "@media (max-width: 1024px)": {
-      width: "4.5rem",
-      height: "4.5rem",
-    },
-  },
-  mas: {
-    position: "absolute",
-    color: colors.black,
-    textAlign: "center",
-    width: "101%",
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-    fontWeight: "bold",
-    fontSize: "3vh",
-    marginTop: "2rem",
-    overflow: "hidden",
-    "@media (max-width: 1024px)": {
-      fontSize: "2.5vh",
-    },
-  },
-});
 
 export default Icons;

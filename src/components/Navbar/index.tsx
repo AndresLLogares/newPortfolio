@@ -11,8 +11,8 @@ import Logo from "../../assets/logo.svg";
 import useWindowSize from "../utils/size";
 import { DefaultTheme } from "@material-ui/styles";
 import scroll from "../utils/scroll";
+import { urlsSVG } from "../../styles/urls";
 import "./dropdown.scss";
-import opacity from "material-ui/svg-icons/action/opacity";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -326,6 +326,9 @@ const useStyles = makeStyles<DefaultTheme>({
     alignItems: "center",
     justifyContent: "center",
     boxShadow: "none",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundImage: `${urlsSVG.navbarLight}`,
     borderBottom: `5px solid ${colors.blue} `,
     transition: "background-color 1s ease",
     zIndex: 3,
@@ -339,6 +342,8 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     boxShadow: "none",
     borderBottom: `5px solid ${colors.pink}`,
+    backgroundSize: "cover",
+    backgroundImage: `${urlsSVG.navbarDark}`,
     transition: "background-color 1s ease",
     zIndex: 3,
   },

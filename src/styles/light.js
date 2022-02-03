@@ -1,10 +1,10 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 const lightTheme = {
-  colorBlack: "#231b1b",
-  colorWhite: "#fdfffc",
-  colorBlue: "#1C6DD0",
-  colorBackground: "#fdfffc",
+  text: "#231b1b",
+  icons: "#1C6DD0",
+  background: "#fdfffc",
+  contrast: "#FA4EAB",
 };
 
 export const light = responsiveFontSizes(
@@ -12,13 +12,16 @@ export const light = responsiveFontSizes(
     palette: {
       type: "light",
       primary: {
-        main: lightTheme.colorBlack,
+        main: lightTheme.text,
       },
       secondary: {
-        main: lightTheme.colorWhite,
+        main: lightTheme.icons,
+      },
+      common: {
+        main: lightTheme.contrast,
       },
       background: {
-        default: lightTheme.colorBackground,
+        default: lightTheme.background,
       },
     },
   })
