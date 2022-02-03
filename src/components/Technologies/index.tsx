@@ -32,7 +32,6 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "center",
     marginBottom: "5vh",
     transition: "background-image 0.5s ease",
-    backgroundImage: `${urlsSVG.light}`,
     zIndex: 1,
   },
   rootDark: {
@@ -45,7 +44,6 @@ const useStyles = makeStyles<DefaultTheme>({
     marginBottom: "5vh",
     zIndex: 1,
     transition: "background-image 0.5s ease",
-    backgroundImage: `${urlsSVG.dark}`,
   },
 });
 

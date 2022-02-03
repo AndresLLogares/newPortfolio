@@ -12,6 +12,8 @@ import global_es from "./translations/es/global.json";
 import { DefaultTheme } from "@material-ui/styles";
 import { colors } from "./styles/colors";
 import Loading from "./components/Loading/index";
+import { urlsSVG } from "./styles/urls";
+
 const Home = lazy(() => import("./components/Home/index"));
 const Navbar = lazy(() => import("./components/Navbar/index"));
 const Buttontoggle = lazy(() => import("./components/Buttontoggle/index"));
@@ -73,6 +75,10 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     flexDirection: "column",
     height: "fit-content",
     backgroundColor: colors.black,
+    backgroundPosition: "center",
+    backgroundRepeat: "repeat",
+    backgroundSize: "contain",
+    backgroundImage: `${urlsSVG.navbarDark}`,
     transition: "background-color 1s ease",
   },
   root: {
@@ -82,6 +88,10 @@ const useStyles = makeStyles<DefaultTheme>((theme) => ({
     flexDirection: "column",
     height: "fit-content",
     backgroundColor: colors.nav,
+    backgroundPosition: "center",
+    backgroundRepeat: "repeat",
+    backgroundSize: "contain",
+    backgroundImage: `${urlsSVG.navbarLight}`,
     transition: "background-color 1s ease",
   },
 }));

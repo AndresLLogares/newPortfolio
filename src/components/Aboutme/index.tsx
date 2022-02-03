@@ -31,7 +31,6 @@ const AboutMe = (props: any) => {
       flexDirection: "column",
       marginBottom: "7vh",
       transition: "background-image 0.5s ease",
-      backgroundImage: `${urlsSVG.light}`,
     },
     rootAboutMeDark: {
       display: "flex",
@@ -41,7 +40,6 @@ const AboutMe = (props: any) => {
       flexDirection: "column",
       marginBottom: "7vh",
       transition: "background-image 0.5s ease",
-      backgroundImage: `${urlsSVG.dark}`,
     },
     divFather: {
       display: "flex",

@@ -42,7 +42,6 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "flex-start",
     marginBottom: "5vh",
     zIndex: 1,
-    backgroundImage: `${urlsSVG.light}`,
   },
   rootRecommendationsDark: {
     display: "flex",
@@ -54,7 +53,6 @@ const useStyles = makeStyles<DefaultTheme>({
     justifyContent: "flex-start",
     marginBottom: "5vh",
     zIndex: 1,
-    backgroundImage: `${urlsSVG.dark}`,
   },
 });
 
