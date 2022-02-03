@@ -83,3 +83,14 @@ $pink: #fa4eab;
   bottom: 2px;
   left: 2px;
 }
+
+@media screen and (max-width: 1024px) {
+  .buttonSocial {
+    width: 20rem;
+    justify-content: flex-start;
+  }
+  .buttonSocialDark {
+    width: 20rem;
+    justify-content: flex-start;
+  }
+}
