@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
+import { Typography } from "@material-ui/core";
 import { LogoReact } from "@styled-icons/ionicons-solid/LogoReact";
 import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
 import { Redux } from "@styled-icons/simple-icons/Redux";
@@ -50,22 +51,24 @@ const Icons = () => {
       },
     },
     icons: {
-      width: "6rem",
-      height: "6rem",
+      width: "4rem",
+      height: "4rem",
       color: colors.palette.secondary.main,
       "@media (max-width: 1024px)": {
-        width: "4.5rem",
-        height: "4.5rem",
+        width: "3rem",
+        height: "3rem",
       },
     },
-    mas: {
-      position: "absolute",
-      textAlign: "center",
-      width: "101%",
-      marginTop: "2rem",
-      overflow: "hidden",
+    text: {
+      display: "flex",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
+      zIndex: 2,
+      textTransform: "none",
+      fontSize: "2.5vh",
+      fontWeight: "bold",
+      color: colors.palette.secondary.main,
       "@media (max-width: 1024px)": {
-        fontSize: "2.5vh",
+        fontSize: "2vh",
       },
     },
   });
@@ -75,258 +78,182 @@ const Icons = () => {
 
   return (
     <div className={classes.root}>
-      <div
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <LogoReact className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          React
-        </button>
-      </div>
-      <div
+        <LogoReact className={classes.icons} />
+        <Typography className={classes.text}>React</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Javascript className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Javascript
-        </button>
-      </div>
-      <div
+        <Javascript className={classes.icons} />
+        <Typography className={classes.text}>Javascript</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Express className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Express
-        </button>
-      </div>
-      <div
+        <Redux className={classes.icons} />
+        <Typography className={classes.text}>Redux</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Sequelize className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Sequelize
-        </button>
-      </div>
-      <div
+        <Express className={classes.icons} />
+        <Typography className={classes.text}>Express</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Redux className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Redux
-        </button>
-      </div>
-      <div
+        <Sequelize className={classes.icons} />
+        <Typography className={classes.text}>Sequelize</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Html5 className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          HTML
-        </button>
-      </div>
-      <div
+        <Apollographql className={classes.icons} />
+        <Typography className={classes.text}>Apollo</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Css3 className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          CSS
-        </button>
-      </div>
-      <div
+        <Graphql className={classes.icons} />
+        <Typography className={classes.text}>Graphql</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Graphql className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          GraphQl
-        </button>
-      </div>
-      <div
+        <Html5 className={classes.icons} />
+        <Typography className={classes.text}>Html</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Apollographql className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Apollo
-        </button>
-      </div>
-      <div
+        <Css3 className={classes.icons} />
+        <Typography className={classes.text}>CSS</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Mongodb className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          MongoDB
-        </button>
-      </div>
-      <div
+        <Mongodb className={classes.icons} />
+        <Typography className={classes.text}>Mongo</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Nodejs className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Node
-        </button>
-      </div>
-      <div
+        <Nodejs className={classes.icons} />
+        <Typography className={classes.text}>Node</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Scrumalliance className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Scrum
-        </button>
-      </div>
-      <div
+        <Scrumalliance className={classes.icons} />
+        <Typography className={classes.text}>Scrum</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Nextdotjs className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Next.js
-        </button>
-      </div>
-      <div
+        <Nextdotjs className={classes.icons} />
+        <Typography className={classes.text}>Next</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Typescript className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Typescript
-        </button>
-      </div>
-      <div
+        <Typescript className={classes.icons} />
+        <Typography className={classes.text}>Typescript</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Ethereum className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Ethereum
-        </button>
-      </div>
-      <div
+        <Ethereum className={classes.icons} />
+        <Typography className={classes.text}>Ethereum</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Gatsby className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Gatsby
-        </button>
-      </div>
-      <div
+        <Gatsby className={classes.icons} />
+        <Typography className={classes.text}>Gatsby</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Blockchaindotcom className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Blockchain
-        </button>
-      </div>
-      <div
+        <Blockchaindotcom className={classes.icons} />
+        <Typography className={classes.text}>Blockchain</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Materialui className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Material UI
-        </button>
-      </div>
-      <div
+        <Materialui className={classes.icons} />
+        <Typography className={classes.text}>MaterialUI</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <HardHat className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          HardHat
-        </button>
-      </div>
-      <div
+        <HardHat className={classes.icons} />
+        <Typography className={classes.text}>HardHat</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <Solidity className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Solidity
-        </button>
-      </div>
-      <div
+        <Solidity className={classes.icons} />
+        <Typography className={classes.text}>Solidity</Typography>
+      </button>
+      <button
         className={
-          theme === "light" ? "buttonContainer" : "buttonContainerDark"
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <span className={classes.mas}>
-          <LogoDocker className={classes.icons} />
-        </span>
-        <button type="button" name="Hover">
-          Docker
-        </button>
-      </div>
+        <LogoReact className={classes.icons} />
+        <Typography className={classes.text}>React</Typography>
+      </button>
+      <button
+        className={
+          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
+        }
+      >
+        <LogoDocker className={classes.icons} />
+        <Typography className={classes.text}>Docker</Typography>
+      </button>
     </div>
   );
 };

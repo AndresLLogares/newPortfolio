@@ -2,128 +2,160 @@ $White: #ffffff;
 $Black: #231b1b;
 $Grey: #fdfffc;
 $Blue: #1c6dd0;
-$pink: #fa4eab;
+$Pink: #fa4eab;
 
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&display=swap");
-@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
-  background: $bcolor;
-  -webkit-mask: url($url);
-  mask: url($url);
-  -webkit-mask-size: $x1 $y1;
-  mask-size: $x1 $y1;
-  border: $bor;
-  color: $col;
-}
 
-@-webkit-keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-
-.buttonContainer {
+.buttonTechnologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10rem;
+  height: fit-content;
+  color: #101832;
+  cursor: pointer;
+  background-color: $Grey;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  margin: 2vh;
   position: relative;
-  width: 20vh;
-  height: 20vh;
-  overflow: hidden;
-  border: transparent;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 100%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  button {
-    width: 101%;
-    height: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 3vh;
-    letter-spacing: 1px;
-    font-weight: bold;
-    @include button(
-      $Black,
-      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-      3000%,
-      100%,
-      none,
-      $White
-    );
-    &:hover {
-      -webkit-animation: ani 0.7s steps(29) forwards;
-      animation: ani 0.7s steps(29) forwards;
-      cursor: pointer;
-    }
-  }
+  border: 3px $Blue solid;
+  border-image: linear-gradient(45deg, $Blue 0%, $Black 100%);
+  border-image-slice: 1 1 0 0;
+  z-index: 1;
+  transform-origin: left bottom;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.buttonTechnologies:before,
+.buttonTechnologies:after {
+  border: 3px $Blue solid;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.buttonTechnologies:before {
+  border-image: linear-gradient(45deg, $Blue 0%, $Blue 100%);
+  border-image-slice: 1 1 0 1;
+  left: -0.59em;
+  top: 0.15em;
+  width: 0.31em;
+  height: 100%;
+  transform: skewY(-45deg);
+}
+.buttonTechnologies:after {
+  border-image: linear-gradient(45deg, $Blue 0%, $Black 100%);
+  border-image-slice: 1 1 1 0;
+  bottom: -0.61em;
+  right: 0.16em;
+  width: 100%;
+  height: 0.31em;
+  transform: skewX(-45deg);
+}
+.buttonTechnologies:hover {
+  background-color: $Grey;
+  background-size: 90%;
+  color: #000;
+  transform: translate(0.5em, -0.5em);
+  box-shadow: -1em 1em 0.15em rgba(16, 24, 50, 0.1);
+}
+.buttonTechnologies:hover:before {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwOTdkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, $Blue 0%, $Blue 100%);
+  background-image: -webkit-linear-gradient(45deg, $Blue 0%, $Blue 100%);
+  background-image: linear-gradient(45deg, $Blue 0%, $Blue 100%);
+  height: calc(100% - 0.13em);
+  border-image-slice: 1;
+}
+.buttonTechnologies:hover:after {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, $Blue 0%, $Black 100%);
+  background-image: -webkit-linear-gradient(45deg, $Blue 0%, $Black 100%);
+  background-image: linear-gradient(45deg, $Blue 0%, $Black 100%);
+  width: calc(100% - 0.13em);
+  border-image-slice: 1;
 }
 
-.buttonContainerDark {
+.buttonTechnologiesDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10rem;
+  height: fit-content;
+  color: #101832;
+  cursor: pointer;
+  background-color: $Black;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  margin: 2vh;
   position: relative;
-  width: 20vh;
-  height: 20vh;
-  overflow: hidden;
-  border: transparent;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 100%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  button {
-    width: 101%;
-    height: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 3vh;
-    letter-spacing: 1px;
-    font-weight: bold;
-    @include button(
-      $Grey,
-      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
-      3000%,
-      100%,
-      none,
-      $Black
-    );
-    &:hover {
-      -webkit-animation: ani 0.7s steps(29) forwards;
-      animation: ani 0.7s steps(29) forwards;
-      cursor: pointer;
-    }
-  }
+  border: 3px $Pink solid;
+  border-image: linear-gradient(45deg, $Pink 0%, $Grey 100%);
+  border-image-slice: 1 1 0 0;
+  z-index: 1;
+  transform-origin: left bottom;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-
-@media (max-width: 1024px) {
-  .buttonContainer {
-    width: 20vh;
-    height: 20vh;
-    margin: 3%;
-    button {
-      font-size: 2.5vh;
-    }
-  }
-  .buttonContainerDark {
-    width: 20vh;
-    height: 20vh;
-    margin: 3%;
-    button {
-      font-size: 2.5vh;
-    }
-  }
+.buttonTechnologiesDark:before,
+.buttonTechnologiesDark:after {
+  border: 3px $Blue solid;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.buttonTechnologiesDark:before {
+  border-image: linear-gradient(45deg, $Pink 0%, $Pink 100%);
+  border-image-slice: 1 1 0 1;
+  left: -0.59em;
+  top: 0.15em;
+  width: 0.31em;
+  height: 100%;
+  transform: skewY(-45deg);
+}
+.buttonTechnologiesDark:after {
+  border-image: linear-gradient(45deg, $Pink 0%, $Grey 100%);
+  border-image-slice: 1 1 1 0;
+  bottom: -0.61em;
+  right: 0.16em;
+  width: 100%;
+  height: 0.31em;
+  transform: skewX(-45deg);
+}
+.buttonTechnologiesDark:hover {
+  background-color: $Black;
+  background-size: 90%;
+  color: #000;
+  transform: translate(0.5em, -0.5em);
+  box-shadow: -1em 1em 0.15em rgba(16, 24, 50, 0.1);
+}
+.buttonTechnologiesDark:hover:before {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwOTdkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, $Pink 0%, $Pink 100%);
+  background-image: -webkit-linear-gradient(45deg, $Pink 0%, $Pink 100%);
+  background-image: linear-gradient(45deg, $Pink 0%, $Pink 100%);
+  height: calc(100% - 0.13em);
+  border-image-slice: 1;
+}
+.buttonTechnologiesDark:hover:after {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmNkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, $Pink 0%, $Grey 100%);
+  background-image: -webkit-linear-gradient(45deg, $Pink 0%, $Grey 100%);
+  background-image: linear-gradient(45deg, $Pink 0%, $Grey 100%);
+  width: calc(100% - 0.13em);
+  border-image-slice: 1;
 }

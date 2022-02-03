@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin";
 import { Github } from "@styled-icons/boxicons-logos/Github";
@@ -13,11 +15,67 @@ import { Typography } from "@material-ui/core";
 import "./buttons.scss";
 
 const SocialMedia = () => {
-  const classes = useStyles();
+  let colorTheme: any = useTheme();
+  const [colors, setColors] = useState<any>(colorTheme);
+
+  useEffect(() => {
+    const changeColor = () => {
+      setColors(colorTheme);
+    };
+    changeColor();
+  }, [colorTheme]);
 
   const [theme] = useGlobalState("theme");
 
   const { t } = useTranslation("global");
+
+  const useStyles = makeStyles<DefaultTheme>({
+    rootSocialMedia: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "95%",
+      marginTop: "5vh",
+      marginBottom: "5vh",
+      "@media (max-width: 1024px)": {
+        width: "100%",
+        justifyContent: "center",
+      },
+    },
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      margin: "4vh",
+      "@media (max-width: 1024px)": {
+        width: "90%",
+      },
+    },
+    text: {
+      display: "flex",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
+      zIndex: 2,
+      textTransform: "none",
+      fontSize: "2.5vh",
+      fontWeight: "bold",
+      color: colors.palette.primary.main,
+      "@media (max-width: 1024px)": {
+        fontSize: "2vh",
+      },
+    },
+    icons: {
+      width: "6vh",
+      height: "6vh",
+      marginRight: "1vh",
+      color: colors.palette.primary.main,
+      zIndex: 2,
+    },
+  });
+
+  const classes = useStyles();
 
   return (
     <div className={classes.rootSocialMedia}>
@@ -32,15 +90,9 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <TextDocument
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <TextDocument className={classes.icons} />
+            <Typography className={classes.text}>{t("CV.first")}</Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            {t("CV.first")}
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -54,15 +106,9 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <TextDocument
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <TextDocument className={classes.icons} />
+            <Typography className={classes.text}>{t("CV.second")}</Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            {t("CV.second")}
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -76,15 +122,9 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <Linkedin
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <Linkedin className={classes.icons} />
+            <Typography className={classes.text}>Linkedin</Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            Linkedin
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -98,15 +138,11 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <Email
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <Email className={classes.icons} />
+            <Typography className={classes.text}>
+              Andresl940@hotmail.com
+            </Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            Andresl940@hotmail.com
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -120,15 +156,9 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <Github
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <Github className={classes.icons} />
+            <Typography className={classes.text}>Github</Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            Github
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -142,15 +172,9 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <Discord
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <Discord className={classes.icons} />
+            <Typography className={classes.text}>AndresLogares#6764</Typography>
           </button>
-          <Typography
-            className={theme === "light" ? classes.text : classes.textDark}
-          >
-            AndresLogares#6764
-          </Typography>
         </a>
       </div>
       <div className={classes.container}>
@@ -164,83 +188,13 @@ const SocialMedia = () => {
             className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
             type="button"
           >
-            <Phone
-              className={theme === "light" ? classes.icons : classes.iconsDark}
-            />
+            <Phone className={classes.icons} />
+            <Typography className={classes.text}>+54 9 1136005563</Typography>
           </button>
         </a>
-        <Typography
-          className={theme === "light" ? classes.text : classes.textDark}
-        >
-          +54 9 1136005563
-        </Typography>
       </div>
     </div>
   );
 };
-
-const useStyles = makeStyles<DefaultTheme>({
-  rootSocialMedia: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "95%",
-    marginTop: "5vh",
-    marginBottom: "5vh",
-    "@media (max-width: 1024px)": {
-      width: "100%",
-      justifyContent: "center",
-    },
-  },
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    width: "20rem",
-    margin: "4vh",
-    "@media (max-width: 1024px)": {
-      width: "90%",
-    },
-  },
-  text: {
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-    zIndex: 2,
-    textTransform: "none",
-    fontSize: "2.5vh",
-    fontWeight: "bold",
-    color: colors.black,
-    marginTop: "1rem",
-    "@media (max-width: 1024px)": {
-      fontSize: "2vh",
-    },
-  },
-  textDark: {
-    fontFamily: ["Poppins", "sans-serif"].join(","),
-    zIndex: 2,
-    textTransform: "none",
-    fontSize: "2.5vh",
-    fontWeight: "bold",
-    color: colors.nav,
-    marginTop: "1rem",
-    "@media (max-width: 1024px)": {
-      fontSize: "2vh",
-    },
-  },
-  icons: {
-    width: "6vh",
-    height: "6vh",
-    color: colors.black,
-    zIndex: 2,
-  },
-  iconsDark: {
-    width: "6vh",
-    height: "6vh",
-    color: colors.nav,
-    zIndex: 2,
-  },
-});
 
 export default SocialMedia;
