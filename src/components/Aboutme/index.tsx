@@ -91,7 +91,7 @@ const AboutMe = (props: any) => {
       },
     },
     image: {
-      width: "450px",
+      width: "350px",
       marginLeft: "4.5vw",
       border: `5px solid`,
       borderColor: colors.palette.secondary.main,
@@ -101,6 +101,7 @@ const AboutMe = (props: any) => {
       },
     },
     subtitle: {
+      display: "flex",
       fontSize: "2.5vh",
       fontWeight: "bold",
       fontFamily: ["Poppins", "sans-serif"].join(","),
@@ -125,9 +126,6 @@ const AboutMe = (props: any) => {
         <div className={classes.divSub}>
           <Typography className={classes.subtitle}>
             {t("About.first")}
-          </Typography>
-          <Typography className={classes.subtitle}>
-            {t("About.second")}
           </Typography>
         </div>
       </div>
