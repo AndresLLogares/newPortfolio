@@ -396,6 +396,9 @@ const useStyles = makeStyles<DefaultTheme>({
     textDecoration: "none",
     marginRight: "2rem",
     marginLeft: "0rem",
+    "@media (max-width: 1024px)": {
+      margin: "0",
+    },
   },
   buttonLight: {
     width: "17vh",
