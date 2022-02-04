@@ -3,22 +3,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
-import { useGlobalState } from "../../hooks/useTheme";
 import Icons from "./icons";
-import { urlsSVG } from "../../styles/urls";
+import { Slide } from "react-awesome-reveal";
 
 const Technologies = () => {
   const classes = useStyles();
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
 
   return (
-    <div
-      id="technologies"
-      className={theme === "light" ? classes.root : classes.rootDark}
-    >
-      <Subtitle title={t("titles.Technologies")} />
-      <Icons />
+    <div id="technologies" className={classes.root}>
+      <Slide direction="right" className={classes.slide}>
+        <Subtitle title={t("titles.Technologies")} />
+        <Icons />
+      </Slide>
     </div>
   );
 };
@@ -34,16 +31,12 @@ const useStyles = makeStyles<DefaultTheme>({
     transition: "background-image 0.5s ease",
     zIndex: 1,
   },
-  rootDark: {
+  slide: {
     display: "flex",
-    width: "100%",
-    height: "fit-content",
-    flexDirection: "column",
+    justifyContent: "flex-start",
     alignItems: "center",
-    justifyContent: "center",
-    marginBottom: "5vh",
-    zIndex: 1,
-    transition: "background-image 0.5s ease",
+    width: "100%",
+    flexDirection: "column",
   },
 });
 

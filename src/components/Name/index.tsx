@@ -29,13 +29,14 @@ const Name = () => {
       width: "100%",
       height: "80vh",
       marginTop: "10vh",
-      marginBottom: "7vh",
+      marginBottom: "15vh",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       "@media (max-width: 1024px)": {
         marginTop: "15vh",
         height: "100vh",
+        marginBottom: "12vh",
       },
     },
     divFather: {

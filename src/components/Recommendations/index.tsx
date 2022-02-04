@@ -4,29 +4,22 @@ import { DefaultTheme } from "@material-ui/styles";
 import Quotes from "./recommendations";
 import Carlos from "../../assets/carlos.jpeg";
 import { useTranslation } from "react-i18next";
-import { useGlobalState } from "../../hooks/useTheme";
-import { urlsSVG } from "../../styles/urls";
+import { Slide } from "react-awesome-reveal";
 
 const Recommendations = () => {
   const classes = useStyles();
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
 
   return (
-    <div
-      id="Recommendations"
-      className={
-        theme === "light"
-          ? classes.rootRecommendations
-          : classes.rootRecommendationsDark
-      }
-    >
-      <Subtitle title={t("Recommendations.first")} />
-      <Quotes
-        name={"Carlos Benetti"}
-        recommendations={t("Recommendations.second")}
-        image={Carlos}
-      />
+    <div id="Recommendations" className={classes.rootRecommendations}>
+      <Slide direction="left" className={classes.slide}>
+        <Subtitle title={t("Recommendations.first")} />
+        <Quotes
+          name={"Carlos Benetti"}
+          recommendations={t("Recommendations.second")}
+          image={Carlos}
+        />
+      </Slide>
     </div>
   );
 };
@@ -43,16 +36,12 @@ const useStyles = makeStyles<DefaultTheme>({
     marginBottom: "5vh",
     zIndex: 1,
   },
-  rootRecommendationsDark: {
+  slide: {
     display: "flex",
-    width: "100%",
-    minHeight: "60vh",
-    height: "fit-content",
-    flexDirection: "column",
-    alignItems: "center",
     justifyContent: "flex-start",
-    marginBottom: "5vh",
-    zIndex: 1,
+    alignItems: "center",
+    width: "100%",
+    flexDirection: "column",
   },
 });
 

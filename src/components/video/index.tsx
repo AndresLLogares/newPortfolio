@@ -18,7 +18,7 @@ const VideoComponent = () => {
     video: {
       objectFit: "cover",
       width: "99vw",
-      height: "90vh",
+      height: "100vh",
       position: "absolute",
       top: "0vh",
       "@media (max-width: 1024px)": {

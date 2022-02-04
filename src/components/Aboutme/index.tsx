@@ -6,14 +6,12 @@ import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
 import Image from "../../assets/about.webp";
 import { useTheme } from "@material-ui/core/styles";
-import { useGlobalState } from "../../hooks/useTheme";
-import { urlsSVG } from "../../styles/urls";
+import { Slide } from "react-awesome-reveal";
 
 const AboutMe = (props: any) => {
   let colorTheme: any = useTheme();
   const [colors, setColors] = useState<any>(colorTheme);
   const { t } = useTranslation("global");
-  const [theme] = useGlobalState("theme");
 
   useEffect(() => {
     const changeColor = () => {
@@ -32,14 +30,12 @@ const AboutMe = (props: any) => {
       marginBottom: "7vh",
       transition: "background-image 0.5s ease",
     },
-    rootAboutMeDark: {
+    slide: {
       display: "flex",
       justifyContent: "flex-start",
       alignItems: "center",
-      width: "95%",
+      width: "100%",
       flexDirection: "column",
-      marginBottom: "7vh",
-      transition: "background-image 0.5s ease",
     },
     divFather: {
       display: "flex",
@@ -112,23 +108,20 @@ const AboutMe = (props: any) => {
   const classes = useStyles();
 
   return (
-    <div
-      id="aboutme"
-      className={
-        theme === "light" ? classes.rootAboutMe : classes.rootAboutMeDark
-      }
-    >
-      <Subtitle title={t("titles.about-me")} />
-      <div className={classes.divFather}>
-        <div className={classes.divChildren}>
-          <img src={Image} alt="about" className={classes.image} />
-        </div>{" "}
-        <div className={classes.divSub}>
-          <Typography className={classes.subtitle}>
-            {t("About.first")}
-          </Typography>
+    <div id="aboutme" className={classes.rootAboutMe}>
+      <Slide direction="down" className={classes.slide}>
+        <Subtitle title={t("titles.about-me")} />
+        <div className={classes.divFather}>
+          <div className={classes.divChildren}>
+            <img src={Image} alt="about" className={classes.image} />
+          </div>{" "}
+          <div className={classes.divSub}>
+            <Typography className={classes.subtitle}>
+              {t("About.first")}
+            </Typography>
+          </div>
         </div>
-      </div>
+      </Slide>
     </div>
   );
 };

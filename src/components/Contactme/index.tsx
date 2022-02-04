@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import SocialMedia from "./socialmedia";
 import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
+import { Slide } from "react-awesome-reveal";
 
 const ContactMe = () => {
   let colorTheme: any = useTheme();
@@ -40,16 +41,25 @@ const ContactMe = () => {
       borderColor: colors.palette.secondary.main,
       transition: "background-color 1s ease",
     },
+    slide: {
+      display: "flex",
+      justifyContent: "flex-start",
+      alignItems: "center",
+      width: "100%",
+      flexDirection: "column",
+    },
   });
 
   const classes = useStyles();
 
   return (
     <div id="contactme" className={classes.rootContactMe}>
-      <Subtitle title={t("titles.Contact")} />
-      <div className={classes.container}>
-        <SocialMedia />
-      </div>
+      <Slide direction="right" className={classes.slide}>
+        <Subtitle title={t("titles.Contact")} />
+        <div className={classes.container}>
+          <SocialMedia />
+        </div>
+      </Slide>
     </div>
   );
 };
