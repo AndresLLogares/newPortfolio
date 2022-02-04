@@ -30,15 +30,6 @@ const ContactMe = () => {
       justifyContent: "center",
       zIndex: 2,
     },
-    container: {
-      display: "flex",
-      width: "100%",
-      height: "fit-content",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      transition: "background-color 1s ease",
-    },
     slide: {
       display: "flex",
       justifyContent: "flex-start",
@@ -54,9 +45,7 @@ const ContactMe = () => {
     <div id="contactme" className={classes.rootContactMe}>
       <Slide direction="right" className={classes.slide}>
         <Subtitle title={t("titles.Contact")} />
-        <div className={classes.container}>
-          <SocialMedia />
-        </div>
+        <SocialMedia />
       </Slide>
     </div>
   );
