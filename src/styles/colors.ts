@@ -1,7 +1,8 @@
 export const colors = {
   turquoise: "#4cbfa6",
   lila: "#FFFCDC",
-  purple: "#482673",
+  purple: "#5800FF",
+  yellow: "#FFE652",
   pink: "#FA4EAB",
   blue: "#1C6DD0",
   white: "#ffffff",
