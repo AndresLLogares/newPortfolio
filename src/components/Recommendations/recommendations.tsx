@@ -97,7 +97,7 @@ const RecommendationQuotes = (props: any) => {
     quote: {
       display: "flex",
       fontFamily: ["Poppins", "sans-serif"].join(","),
-      fontSize: "2vh",
+      fontSize: "2.5vh",
       color: colors.palette.primary.main,
       fontWeight: "bold",
     },
