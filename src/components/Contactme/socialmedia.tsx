@@ -63,7 +63,7 @@ const SocialMedia = () => {
       textTransform: "none",
       fontSize: "2.5vh",
       fontWeight: "bold",
-      color: colors.palette.primary.main,
+      color: colors.palette.background.default,
       "@media (max-width: 1024px)": {
         fontSize: "1.5vh",
       },
@@ -72,7 +72,7 @@ const SocialMedia = () => {
       width: "6vh",
       height: "6vh",
       marginRight: "1vh",
-      color: colors.palette.primary.main,
+      color: colors.palette.background.default,
       zIndex: 2,
     },
     "@media (max-width: 1024px)": {
