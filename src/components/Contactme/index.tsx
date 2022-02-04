@@ -37,8 +37,6 @@ const ContactMe = () => {
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      borderTop: `5px solid`,
-      borderColor: colors.palette.secondary.main,
       transition: "background-color 1s ease",
     },
     slide: {
