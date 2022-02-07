@@ -29,6 +29,7 @@ const Footer = () => {
       borderTopColor: colors.palette.secondary.main,
       zIndex: 2,
       marginTop: "5vh",
+      transition: "background-color 1s ease",
     },
     slide: {
       display: "flex",
