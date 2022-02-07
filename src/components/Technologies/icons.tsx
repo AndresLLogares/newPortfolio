@@ -27,10 +27,12 @@ import { DefaultTheme } from "@material-ui/styles";
 import { LogoDocker } from "@styled-icons/ionicons-solid/LogoDocker";
 import "./icon.scss";
 import { Zoom } from "react-awesome-reveal";
+import useWindowSize from "../utils/size";
 
 const Icons = () => {
   let colorTheme: any = useTheme();
   const [colors, setColors] = useState<any>(colorTheme);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const changeColor = () => {
@@ -102,7 +104,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={200}
+        delay={width > 1200 ? 200 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -117,7 +119,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={300}
+        delay={width > 1200 ? 300 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -132,7 +134,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={400}
+        delay={width > 1200 ? 400 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -146,7 +148,7 @@ const Icons = () => {
         direction="right"
         cascade={true}
         triggerOnce={true}
-        delay={500}
+        delay={width > 1200 ? 500 : 0}
         className={classes.Zoom}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
@@ -162,7 +164,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={600}
+        delay={width > 1200 ? 600 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -181,7 +183,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={700}
+        delay={width > 1200 ? 700 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -196,7 +198,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={800}
+        delay={width > 1200 ? 800 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -215,7 +217,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={900}
+        delay={width > 1200 ? 900 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -230,7 +232,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1000}
+        delay={width > 1200 ? 1000 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -245,7 +247,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1100}
+        delay={width > 1200 ? 1100 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -260,7 +262,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1200}
+        delay={width > 1200 ? 1200 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -275,7 +277,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1300}
+        delay={width > 1200 ? 1300 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -290,7 +292,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1400}
+        delay={width > 1200 ? 1400 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -305,7 +307,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1500}
+        delay={width > 1200 ? 1500 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -320,7 +322,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1600}
+        delay={width > 1200 ? 1600 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -335,7 +337,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1700}
+        delay={width > 1200 ? 1700 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -350,7 +352,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1800}
+        delay={width > 1200 ? 1800 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -365,7 +367,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1900}
+        delay={width > 1200 ? 1900 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -380,7 +382,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={2000}
+        delay={width > 1200 ? 2000 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -395,7 +397,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={2100}
+        delay={width > 1200 ? 2100 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -410,7 +412,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={2200}
+        delay={width > 1200 ? 2200 : 0}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }

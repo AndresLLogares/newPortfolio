@@ -13,10 +13,12 @@ import { DefaultTheme } from "@material-ui/styles";
 import { Typography } from "@material-ui/core";
 import "./buttons.scss";
 import { Zoom } from "react-awesome-reveal";
+import useWindowSize from "../utils/size";
 
 const SocialMedia = () => {
   let colorTheme: any = useTheme();
   const [colors, setColors] = useState<any>(colorTheme);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const changeColor = () => {
@@ -120,7 +122,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={200}
+        delay={width > 1200 ? 200 : 0}
         triggerOnce={true}
       >
         <div>
@@ -147,7 +149,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={300}
+        delay={width > 1200 ? 300 : 0}
         triggerOnce={true}
       >
         <div>
@@ -174,7 +176,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={400}
+        delay={width > 1200 ? 400 : 0}
         triggerOnce={true}
       >
         <div>
@@ -203,7 +205,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={500}
+        delay={width > 1200 ? 500 : 0}
         triggerOnce={true}
       >
         <div>
@@ -230,7 +232,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={600}
+        delay={width > 1200 ? 600 : 0}
         triggerOnce={true}
       >
         <div>
@@ -259,7 +261,7 @@ const SocialMedia = () => {
         cascade={true}
         className={classes.Zoom}
         childClassName={classes.container}
-        delay={700}
+        delay={width > 1200 ? 700 : 0}
         triggerOnce={true}
       >
         <div>
