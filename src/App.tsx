@@ -22,7 +22,9 @@ const App = () => {
   const [theme, setTheme] = useGlobalState("theme");
 
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
-
+  window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+  };
   useEffect(() => {
     const checkTheme = () => {
       let localTheme = window.localStorage.getItem("theme");
