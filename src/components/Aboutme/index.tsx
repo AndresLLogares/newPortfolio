@@ -109,7 +109,7 @@ const AboutMe = (props: any) => {
 
   return (
     <div id="aboutme" className={classes.rootAboutMe}>
-      <Slide direction="left" className={classes.slide}>
+      <Slide direction="left" triggerOnce={true} className={classes.slide}>
         <Subtitle title={t("titles.about-me")} />
         <div className={classes.divFather}>
           <div className={classes.divChildren}>

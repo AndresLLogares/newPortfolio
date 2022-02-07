@@ -12,7 +12,7 @@ const Recommendations = () => {
 
   return (
     <div id="Recommendations" className={classes.rootRecommendations}>
-      <Slide direction="left" className={classes.slide}>
+      <Slide direction="left" className={classes.slide} triggerOnce={true}>
         <Subtitle title={t("Recommendations.first")} />
         <Quotes
           name={"Carlos Benetti"}

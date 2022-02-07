@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import { useTranslation } from "react-i18next";
 import SocialMedia from "./socialmedia";
@@ -8,16 +6,6 @@ import { DefaultTheme } from "@material-ui/styles";
 import { Slide } from "react-awesome-reveal";
 
 const ContactMe = () => {
-  let colorTheme: any = useTheme();
-  const [colors, setColors] = useState<any>(colorTheme);
-
-  useEffect(() => {
-    const changeColor = () => {
-      setColors(colorTheme);
-    };
-    changeColor();
-  }, [colorTheme]);
-
   const { t } = useTranslation("global");
 
   const useStyles = makeStyles<DefaultTheme>({
@@ -43,10 +31,10 @@ const ContactMe = () => {
 
   return (
     <div id="contactme" className={classes.rootContactMe}>
-      <Slide direction="right" className={classes.slide}>
+      <Slide direction="right" className={classes.slide} triggerOnce={true}>
         <Subtitle title={t("titles.Contact")} />
-        <SocialMedia />
       </Slide>
+      <SocialMedia />
     </div>
   );
 };

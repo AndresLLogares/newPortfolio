@@ -8,6 +8,7 @@ $pink: #fa4eab;
   background-color: $Blue;
   border: 0 solid $Grey;
   box-sizing: border-box;
+  height: 5rem;
   color: #000000;
   display: flex;
   align-items: center;
@@ -16,7 +17,7 @@ $pink: #fa4eab;
   line-height: 1.75rem;
   padding: 0.75rem 1.65rem;
   position: relative;
-  width: 25rem;
+  width: 23rem;
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
@@ -56,13 +57,14 @@ $pink: #fa4eab;
   line-height: 1.75rem;
   padding: 0.75rem 1.65rem;
   position: relative;
-  width: 25rem;
+  width: 23rem;
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  height: 5rem;
 }
 
 .buttonSocialDark:focus {
@@ -87,10 +89,12 @@ $pink: #fa4eab;
 @media screen and (max-width: 1024px) {
   .buttonSocial {
     width: 20rem;
+    height: 4rem;
     justify-content: flex-start;
   }
   .buttonSocialDark {
     width: 20rem;
+    height: 4rem;
     justify-content: flex-start;
   }
 }

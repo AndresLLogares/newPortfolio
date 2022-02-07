@@ -26,6 +26,7 @@ import { useGlobalState } from "../../hooks/useTheme";
 import { DefaultTheme } from "@material-ui/styles";
 import { LogoDocker } from "@styled-icons/ionicons-solid/LogoDocker";
 import "./icon.scss";
+import { Zoom } from "react-awesome-reveal";
 
 const Icons = () => {
   let colorTheme: any = useTheme();
@@ -71,6 +72,10 @@ const Icons = () => {
         fontSize: "2vh",
       },
     },
+    Zoom: {
+      display: "flex",
+      width: "fit-content",
+    },
   });
 
   const classes = useStyles();
@@ -78,182 +83,343 @@ const Icons = () => {
 
   return (
     <div className={classes.root}>
-      <button
-        className={
+      <Zoom
+        direction="right"
+        cascade={true}
+        className={classes.Zoom}
+        triggerOnce={true}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <LogoReact className={classes.icons} />
-        <Typography className={classes.text}>React</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <LogoReact className={classes.icons} />
+          <Typography className={classes.text}>React</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={200}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Javascript className={classes.icons} />
-        <Typography className={classes.text}>Javascript</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Javascript className={classes.icons} />
+          <Typography className={classes.text}>Javascript</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={300}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Redux className={classes.icons} />
-        <Typography className={classes.text}>Redux</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Redux className={classes.icons} />
+          <Typography className={classes.text}>Redux</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={400}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Express className={classes.icons} />
-        <Typography className={classes.text}>Express</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Express className={classes.icons} />
+          <Typography className={classes.text}>Express</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        delay={500}
+        className={classes.Zoom}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Sequelize className={classes.icons} />
-        <Typography className={classes.text}>Sequelize</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Sequelize className={classes.icons} />
+          <Typography className={classes.text}>Sequelize</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={600}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Apollographql className={classes.icons} />
-        <Typography className={classes.text}>Apollo</Typography>
-      </button>
-      <button
-        className={
+        <button
+          className={
+            theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
+          }
+        >
+          <Apollographql className={classes.icons} />
+          <Typography className={classes.text}>Apollo</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={700}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Graphql className={classes.icons} />
-        <Typography className={classes.text}>Graphql</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Graphql className={classes.icons} />
+          <Typography className={classes.text}>Graphql</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={800}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Html5 className={classes.icons} />
-        <Typography className={classes.text}>Html</Typography>
-      </button>
-      <button
-        className={
+        <button
+          className={
+            theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
+          }
+        >
+          <Html5 className={classes.icons} />
+          <Typography className={classes.text}>Html</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={900}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Css3 className={classes.icons} />
-        <Typography className={classes.text}>CSS</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Css3 className={classes.icons} />
+          <Typography className={classes.text}>CSS</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1000}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Mongodb className={classes.icons} />
-        <Typography className={classes.text}>Mongo</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Mongodb className={classes.icons} />
+          <Typography className={classes.text}>Mongo</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1100}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Nodejs className={classes.icons} />
-        <Typography className={classes.text}>Node</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Nodejs className={classes.icons} />
+          <Typography className={classes.text}>Node</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1200}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Scrumalliance className={classes.icons} />
-        <Typography className={classes.text}>Scrum</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Scrumalliance className={classes.icons} />
+          <Typography className={classes.text}>Scrum</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1300}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Nextdotjs className={classes.icons} />
-        <Typography className={classes.text}>Next</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Nextdotjs className={classes.icons} />
+          <Typography className={classes.text}>Next</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1400}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Typescript className={classes.icons} />
-        <Typography className={classes.text}>Typescript</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Typescript className={classes.icons} />
+          <Typography className={classes.text}>Typescript</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1500}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Ethereum className={classes.icons} />
-        <Typography className={classes.text}>Ethereum</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Ethereum className={classes.icons} />
+          <Typography className={classes.text}>Ethereum</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1600}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Gatsby className={classes.icons} />
-        <Typography className={classes.text}>Gatsby</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Gatsby className={classes.icons} />
+          <Typography className={classes.text}>Gatsby</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1700}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Blockchaindotcom className={classes.icons} />
-        <Typography className={classes.text}>Blockchain</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Blockchaindotcom className={classes.icons} />
+          <Typography className={classes.text}>Blockchain</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1700}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Materialui className={classes.icons} />
-        <Typography className={classes.text}>MaterialUI</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Materialui className={classes.icons} />
+          <Typography className={classes.text}>MaterialUI</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1800}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <HardHat className={classes.icons} />
-        <Typography className={classes.text}>HardHat</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <HardHat className={classes.icons} />
+          <Typography className={classes.text}>HardHat</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={1900}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <Solidity className={classes.icons} />
-        <Typography className={classes.text}>Solidity</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <Solidity className={classes.icons} />
+          <Typography className={classes.text}>Solidity</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={2000}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <LogoReact className={classes.icons} />
-        <Typography className={classes.text}>React</Typography>
-      </button>
-      <button
-        className={
+        <button>
+          <LogoReact className={classes.icons} />
+          <Typography className={classes.text}>React</Typography>
+        </button>
+      </Zoom>
+      <Zoom
+        direction="right"
+        cascade={true}
+        triggerOnce={true}
+        className={classes.Zoom}
+        delay={2100}
+        childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
       >
-        <LogoDocker className={classes.icons} />
-        <Typography className={classes.text}>Docker</Typography>
-      </button>
+        <button>
+          <LogoDocker className={classes.icons} />
+          <Typography className={classes.text}>Docker</Typography>
+        </button>
+      </Zoom>
     </div>
   );
 };

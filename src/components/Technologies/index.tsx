@@ -12,10 +12,15 @@ const Technologies = () => {
 
   return (
     <div id="technologies" className={classes.root}>
-      <Slide direction="right" className={classes.slide}>
+      <Slide
+        direction="right"
+        cascade={true}
+        className={classes.slide}
+        triggerOnce={true}
+      >
         <Subtitle title={t("titles.Technologies")} />
-        <Icons />
       </Slide>
+      <Icons />
     </div>
   );
 };
