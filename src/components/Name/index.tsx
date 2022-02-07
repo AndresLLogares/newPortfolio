@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useTheme } from "@material-ui/core/styles";
 import { Suspense, lazy } from "react";
 import { makeStyles } from "@material-ui/core/styles";
@@ -12,14 +11,6 @@ const VideoComponent = lazy(() => import("../video/index"));
 
 const Name = () => {
   let colorTheme: any = useTheme();
-  const [colors, setColors] = useState<any>(colorTheme);
-
-  useEffect(() => {
-    const changeColor = () => {
-      setColors(colorTheme);
-    };
-    changeColor();
-  }, [colorTheme]);
 
   const { t } = useTranslation("global");
 

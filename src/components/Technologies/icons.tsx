@@ -350,7 +350,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1700}
+        delay={1800}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -365,7 +365,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1800}
+        delay={1900}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -380,7 +380,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={1900}
+        delay={2000}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -395,7 +395,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={2000}
+        delay={2100}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
@@ -410,7 +410,7 @@ const Icons = () => {
         cascade={true}
         triggerOnce={true}
         className={classes.Zoom}
-        delay={2100}
+        delay={2200}
         childClassName={
           theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
         }
