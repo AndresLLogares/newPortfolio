@@ -17,5 +17,10 @@
   "Recommendations": {
     "first": "Recomendaciones",
     "second": "Andrés es increíble en su trabajo. Sabe desenvolverse entre la gente y hace lo que sea necesario para ayudar a sus compañeros. Su experiencia como desarrollador es considerable y ayudó a nuestro equipo a encontrar soluciones más eficientes y a desarrollar diferentes proyectos. Andrés se convertiría en un miembro apreciado de cualquier equipo."
+  },
+  "Experience": {
+    "first": "Experiencia",
+    "second": "Presente",
+    "third": "Desarrolador FrontEnd de manera freelancer trabajando en diferentes paginas web y ayudar en el desarrollo de DApps, aprendiendo en el camino sobre Blockchain, Solidity y otrasb herramientas de programacion."
   }
 }

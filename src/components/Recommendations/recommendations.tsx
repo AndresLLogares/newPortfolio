@@ -5,7 +5,6 @@ import { DefaultTheme } from "@material-ui/styles";
 import { Typography, Box } from "@material-ui/core";
 import { QuoteAltLeft } from "@styled-icons/boxicons-solid/QuoteAltLeft";
 import { QuoteAltRight } from "@styled-icons/boxicons-solid/QuoteAltRight";
-import { useGlobalState } from "../../hooks/useTheme";
 
 const RecommendationQuotes = (props: any) => {
   let colorTheme: any = useTheme();

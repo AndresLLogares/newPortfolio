@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 import Subtitle from "../Subtitles/index";
 import { DefaultTheme } from "@material-ui/styles";
-import Quotes from "./recommendations";
-import Carlos from "../../assets/carlos.jpeg";
-import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
+import Experiences from "./experiences";
 import { useTheme } from "@material-ui/core/styles";
 
-const Recommendations = () => {
+const Experience = () => {
   let colorTheme: any = useTheme();
   const [colors, setColors] = useState<any>(colorTheme);
 
@@ -20,16 +19,16 @@ const Recommendations = () => {
   }, [colorTheme]);
 
   const useStyles = makeStyles<DefaultTheme>({
-    rootRecommendations: {
+    root: {
       display: "flex",
       width: "100%",
-      paddingTop: "2vh",
-      paddingBottom: "2vh",
       height: "fit-content",
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "flex-start",
+      justifyContent: "center",
       marginBottom: "5vh",
+      paddingTop: "2vh",
+      paddingBottom: "2vh",
       backgroundColor: colors.palette.background.default,
       borderTop: "5px solid " + colors.palette.common.main,
       borderBottom: "5px solid " + colors.palette.common.main,
@@ -49,17 +48,26 @@ const Recommendations = () => {
   const { t } = useTranslation("global");
 
   return (
-    <div id="Recommendations" className={classes.rootRecommendations}>
-      <Slide direction="left" className={classes.slide} triggerOnce={true}>
-        <Subtitle title={t("Recommendations.first")} />
-        <Quotes
-          name={"Carlos Benetti"}
-          recommendations={t("Recommendations.second")}
-          image={Carlos}
+    <div id="experience" className={classes.root}>
+      <Slide
+        direction="left"
+        cascade={true}
+        className={classes.slide}
+        triggerOnce={true}
+      >
+        <Subtitle title={t("Experience.first")} />
+        <Experiences
+          company={"Octosoft Professionals"}
+          link={
+            "https://www.linkedin.com/company/octosoft-professionals/mycompany/"
+          }
+          date={`08/2021 - ${t("Experience.second")}`}
+          position={"Full Stack Developer"}
+          description={"►" + " " + t("Experience.third")}
         />
       </Slide>
     </div>
   );
 };
 
-export default Recommendations;
+export default Experience;
