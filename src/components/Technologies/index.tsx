@@ -32,7 +32,7 @@ const useStyles = makeStyles<DefaultTheme>({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: "5vh",
+    paddingBottom: "5vh",
     transition: "background-image 0.5s ease",
     zIndex: 1,
   },

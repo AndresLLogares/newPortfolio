@@ -35,7 +35,7 @@ const SocialMedia = () => {
     rootSocialMedia: {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "flex-start",
+      justifyContent: "center",
       alignItems: "center",
       marginBottom: "5vh",
       width: "95%",
