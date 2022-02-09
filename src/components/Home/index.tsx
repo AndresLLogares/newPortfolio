@@ -12,7 +12,6 @@ const Home = () => (
     <AboutMe />
     <Technologies />
     <Experience />
-    <br />
     <Recommendations />
     <ContactMe />
     <Footer />
