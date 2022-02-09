@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Source+Code+Pro&family=Ultra&display=swap");
 @font-face {
   font-family: wild;
-  src: url("../../fonts/wild-world.otf") format("opentype");
+  src: url("../../fonts/projekt-blackbird-v2.otf") format("opentype");
 }
 @font-face {
   font-family: Triaki;
   src: url("../../fonts/TriakisFont-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NaftaLight;
+  src: url("../../fonts/NaftaLight-Regular.ttf") format("opentype");
 }
 
 $White: #ffffff;
@@ -15,17 +20,14 @@ $Blue: #1c6dd0;
 $pink: #fa4eab;
 .title {
   text-align: center;
-  font-size: 13vh;
+  font-size: 15vh;
   font-weight: bold;
   padding: 0px;
   color: $Grey;
   letter-spacing: -0.1rem;
-  font-family: "Triaki", sans-serif;
-  text-shadow: 0 1px 0 #231b1b, 0 2px 0 #231b1b, 0 3px 0 #231b1b,
-    0 4px 0 #231b1b, 0 5px 0 #231b1b, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-family: "NaftaLight", sans-serif;
+  text-shadow: -5px -5px 0 #fa4eab, 5px -5px 0 #fa4eab, -5px 5px 0 #fa4eab,
+    5px 5px 0 #fa4eab;
 }
 
 @media screen and (max-width: 1024px) {
