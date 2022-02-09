@@ -98,7 +98,7 @@ const AboutMe = (props: any) => {
       },
     },
     image: {
-      width: "350px",
+      width: "450px",
       marginLeft: "4.5vw",
       "@media (max-width: 1024px)": {
         marginLeft: "0",
