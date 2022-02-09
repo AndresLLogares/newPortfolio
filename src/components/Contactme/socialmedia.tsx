@@ -53,9 +53,7 @@ const SocialMedia = () => {
       margin: "2rem",
       "@media (max-width: 1024px)": {
         width: "90%",
-        margin: "0",
-        marginTop: "2rem",
-        marginBottom: "2rem",
+        margin: "2rem",
       },
     },
     text: {
