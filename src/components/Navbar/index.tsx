@@ -325,7 +325,6 @@ const useStyles = makeStyles<DefaultTheme>({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-
     backgroundPosition: "center",
     backgroundSize: "contain",
     backgroundImage: `${urlsSVG.navbarLight}`,
