@@ -94,8 +94,10 @@ const Experiences = (props: any) => {
           <Typography className={classes.date}>{props.date}</Typography>
           <Typography className={classes.date}>{props.position}</Typography>
           {props.details &&
-            props.details.map((item: any) => (
-              <Typography className={classes.description}>⭓ {item}</Typography>
+            props.details.map((item: any, index: number) => (
+              <Typography key={index} className={classes.description}>
+                ⭓ {item}
+              </Typography>
             ))}
         </div>
       </div>
