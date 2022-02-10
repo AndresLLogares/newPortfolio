@@ -58,7 +58,7 @@ const Name = () => {
     },
     logo: {
       display: "flex",
-      width: "20vh",
+      width: "15vh",
       "@media (max-width: 1024px)": {
         width: "15vh",
       },
@@ -85,7 +85,7 @@ const Name = () => {
           </div>
           <div className={classes.divSort}>
             <Typography variant="h1" className="title">
-              Andres Logares
+              Andrés Logares
             </Typography>
           </div>
         </div>
