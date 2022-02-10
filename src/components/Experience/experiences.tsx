@@ -96,7 +96,7 @@ const Experiences = (props: any) => {
           {props.details &&
             props.details.map((item: any, index: number) => (
               <Typography key={index} className={classes.description}>
-                ⭓ {item}
+                ⭔ {item}
               </Typography>
             ))}
         </div>
