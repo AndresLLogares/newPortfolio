@@ -403,21 +403,6 @@ const Icons = () => {
         }
       >
         <button>
-          <LogoReact className={classes.icons} />
-          <Typography className={classes.text}>React</Typography>
-        </button>
-      </Zoom>
-      <Zoom
-        direction="right"
-        cascade={true}
-        triggerOnce={true}
-        className={classes.Zoom}
-        delay={width > 1200 ? 2200 : 0}
-        childClassName={
-          theme === "light" ? "buttonTechnologies" : "buttonTechnologiesDark"
-        }
-      >
-        <button>
           <LogoDocker className={classes.icons} />
           <Typography className={classes.text}>Docker</Typography>
         </button>
