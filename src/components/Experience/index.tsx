@@ -44,7 +44,12 @@ const Experience = () => {
 
   const classes = useStyles();
   const { t } = useTranslation("global");
-
+  let details = [
+    t("Experience.first"),
+    t("Experience.second"),
+    t("Experience.third"),
+    t("Experience.fourth"),
+  ];
   return (
     <div id="experience" className={classes.root}>
       <Slide
@@ -53,15 +58,15 @@ const Experience = () => {
         className={classes.slide}
         triggerOnce={true}
       >
-        <Subtitle title={t("Experience.first")} />
+        <Subtitle title={t("Experience.title")} />
         <Experiences
           company={"Octosoft Professionals"}
           link={
             "https://www.linkedin.com/company/octosoft-professionals/mycompany/"
           }
-          date={`08/2021 - ${t("Experience.second")}`}
+          date={`08/2021 - ${t("Experience.time")}`}
           position={"Full Stack Developer"}
-          description={"►" + " " + t("Experience.third")}
+          details={details}
         />
       </Slide>
     </div>

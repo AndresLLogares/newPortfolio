@@ -19,8 +19,12 @@
     "second": "Andrés es increíble en su trabajo. Sabe desenvolverse entre la gente y hace lo que sea necesario para ayudar a sus compañeros. Su experiencia como desarrollador es considerable y ayudó a nuestro equipo a encontrar soluciones más eficientes y a desarrollar diferentes proyectos. Andrés se convertiría en un miembro apreciado de cualquier equipo."
   },
   "Experience": {
-    "first": "Experiencia",
-    "second": "Presente",
-    "third": "Desarrolador FrontEnd de manera freelancer trabajando en diferentes paginas web y ayudar en el desarrollo de DApps, aprendiendo en el camino sobre Blockchain, Solidity y otrasb herramientas de programacion."
+    "title": "Experiencia",
+    "time": "Presente",
+
+    "first": "Desarrolló y estructuró sitios web de clientes ricos en características, asegurando que se cumplieran todas las necesidades y se siguieran las políticas y procedimientos de la empresa creando un código de alta calidad",
+    "second": "Colaboró con los project manager y los equipos creativos para ofrecer una solución original y eficaz; asesoró a los clientes y aportó mi experiencia",
+    "third": "Colaboró con el equipo para diseñar, estructurar e implementar nuevos sitios web de principio a fin ademas de actualizar los sitios web existentes",
+    "fourth": "Participó en reuniones semanales para discutir el progreso del proyecto y los objetivos del equipo"
   }
 }

@@ -67,8 +67,9 @@ const Experiences = (props: any) => {
     },
     description: {
       display: "flex",
-      fontFamily: ["Poppins", "sans-serif"].join(","),
-      fontSize: "3vh",
+      fontFamily: ["Montserrat", "sans-serif"].join(","),
+      fontSize: "2.5vh",
+      marginBottom: "2vh",
       color: colors.palette.primary.main,
       fontWeight: "bold",
       "@media (max-width: 1024px)": {
@@ -77,7 +78,7 @@ const Experiences = (props: any) => {
     },
   });
   const classes = useStyles();
-
+  console.log(props.details);
   return (
     <div className={classes.root}>
       <div className={classes.divFather}>
@@ -92,9 +93,10 @@ const Experiences = (props: any) => {
         <div className={classes.separator}>
           <Typography className={classes.date}>{props.date}</Typography>
           <Typography className={classes.date}>{props.position}</Typography>
-          <Typography className={classes.description}>
-            {props.description}
-          </Typography>
+          {props.details &&
+            props.details.map((item: any) => (
+              <Typography className={classes.description}>⭓ {item}</Typography>
+            ))}
         </div>
       </div>
     </div>

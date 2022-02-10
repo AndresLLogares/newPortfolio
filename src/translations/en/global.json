@@ -19,8 +19,11 @@
     "second": "Andrés is amazing at his job! He knows his way around people, does whatever it takes to help colleagues. His expertise as developer is considerable and it helped our team to come up with more efficient solutions and develop different projects. Andrés would become an appreciated member of any team."
   },
   "Experience": {
-    "first": "Work Experience",
-    "second": "Present",
-    "third": "Freelance FrontEnd Developer working on different websites and helping in the development of DApps, learning along the way about Blockchain, Solidity and other programming tools."
+    "title": "Work Experience",
+    "time": "Present",
+    "first": "Developed and structured feature-rich web client websites, ensuring that all needs were met and company policies and procedures followed creating high-quality code",
+    "second": "Collaborated with project managers and creative teams to deliver an original and effective solution, advised clients and provided my expertise",
+    "third": "Collabored with the team to design and structure and implement new websites from start to finish and updated existing websites",
+    "fourth": "Participated in weekly meetings to discuss the progress of the project and the team's goals"
   }
 }
