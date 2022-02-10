@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: NaftaLight;
-  src: url("../../fonts/NaftaLight-Regular.ttf") format("opentype");
+  font-family: detroit;
+  src: url("../../fonts/BARTKEY.otf") format("opentype");
 }
 
 @font-face {
@@ -26,12 +26,10 @@ $pink: #fa4eab;
 .title {
   text-align: center;
   font-size: 15vh;
-  font-weight: 800;
   margin: 0px;
   padding: 0px;
   color: $Grey;
-  letter-spacing: 0.5rem;
-  font-family: "Archia", sans-serif;
+  font-family: "detroit", sans-serif;
   text-shadow: 4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
     4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
     4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
