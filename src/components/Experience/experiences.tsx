@@ -78,7 +78,7 @@ const Experiences = (props: any) => {
     },
   });
   const classes = useStyles();
-  console.log(props.details);
+
   return (
     <div className={classes.root}>
       <div className={classes.divFather}>
