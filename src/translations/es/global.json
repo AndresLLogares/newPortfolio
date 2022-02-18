@@ -5,7 +5,8 @@
   "titles": {
     "about-me": "Sobre Mí",
     "Technologies": "Tecnologías",
-    "Contact": "Contáctame"
+    "Contact": "Contáctame",
+    "Portfolio": "Portfolio "
   },
   "About": {
     "first": "Un apasionado del desarrollo, tratando de mejorar mis trabajos y capacidades cada día, siempre con mucha curiosidad y ímpetu buscando soluciones a los problemas que se presenten y aprendiendo cosas nuevas en este camino eterno de estudio que implica el ser desarrollador, mientras también aprendo de mis compañeros y ayudo a los demás miembros del equipo."
@@ -26,5 +27,12 @@
     "second": "Colaboró con los project manager y los equipos creativos para ofrecer una solución original y eficaz; asesoró a los clientes y aportó mi experiencia",
     "third": "Colaboró con el equipo para diseñar, estructurar e implementar nuevos sitios web de principio a fin ademas de actualizar los sitios web existentes",
     "fourth": "Participó en reuniones semanales para discutir el progreso del proyecto y los objetivos del equipo"
+  },
+  "Portfolio": {
+    "first": "Projectos Personales",
+    "second": "Projectos Profesionales",
+    "link": "Visita el sitio",
+    "github": "Mira el código",
+    "soon": "Próximamente"
   }
 }

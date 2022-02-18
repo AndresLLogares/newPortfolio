@@ -5,13 +5,15 @@ import ContactMe from "../Contactme/index";
 import Recommendations from "../Recommendations/index";
 import Experience from "../Experience/index";
 import Footer from "../Footer/index";
-
+import Portfolio from "../Portfolio/index";
 const Home = () => (
   <>
     <Name />
     <AboutMe />
     <Technologies />
     <Experience />
+    <br />
+    <Portfolio />
     <br />
     <Recommendations />
     <ContactMe />

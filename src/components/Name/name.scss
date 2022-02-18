@@ -1,28 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Oswald:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Source+Code+Pro&family=Ultra&display=swap");
-@font-face {
-  font-family: wild;
-  src: url("../../fonts/projekt-blackbird-v2.otf") format("opentype");
-}
-@font-face {
-  font-family: Triaki;
-  src: url("../../fonts/TriakisFont-Regular.otf") format("opentype");
-}
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #fdfffc;
+$Blue: #1c6dd0;
+$pink: #fa4eab;
 
 @font-face {
   font-family: detroit;
   src: url("../../fonts/BARTKEY.otf") format("opentype");
 }
 
-@font-face {
-  font-family: Archia;
-  src: url("../../fonts/Benvollin.otf") format("opentype");
-}
-
-$White: #ffffff;
-$Black: #231b1b;
-$Grey: #fdfffc;
-$Blue: #1c6dd0;
-$pink: #fa4eab;
 .title {
   text-align: center;
   font-size: 12vh;

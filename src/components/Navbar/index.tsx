@@ -90,6 +90,22 @@ const Navbar = () => {
                   className={classes.links}
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
+                  href="#Portfolio"
+                >
+                  <Button
+                    className={
+                      theme === "light"
+                        ? classes.buttonLight
+                        : classes.buttonDark
+                    }
+                  >
+                    {t("titles.Portfolio")}
+                  </Button>
+                </a>
+                <a
+                  className={classes.links}
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
                   href="#technologies"
                 >
                   <Button
@@ -190,6 +206,22 @@ const Navbar = () => {
                   className={classes.links}
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
+                  href="#Portfolio"
+                >
+                  <Button
+                    className={
+                      theme === "light"
+                        ? classes.buttonLight
+                        : classes.buttonDark
+                    }
+                  >
+                    {t("titles.Portfolio")}
+                  </Button>
+                </a>
+                <a
+                  className={classes.links}
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
                   href="#technologies"
                 >
                   <Button
@@ -258,6 +290,22 @@ const Navbar = () => {
                     }
                   >
                     {t("titles.about-me")}
+                  </Button>
+                </a>
+                <a
+                  className={classes.links}
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
+                  href="#Portfolio"
+                >
+                  <Button
+                    className={
+                      theme === "light"
+                        ? classes.buttonLight
+                        : classes.buttonDark
+                    }
+                  >
+                    {t("titles.Portfolio")}
                   </Button>
                 </a>
                 <a

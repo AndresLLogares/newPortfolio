@@ -5,7 +5,8 @@
   "titles": {
     "about-me": "About Me",
     "Technologies": "Technologies",
-    "Contact": "Contact Me"
+    "Contact": "Contact Me",
+    "Portfolio": "Portfolio "
   },
   "About": {
     "first": "I am passionate about development, trying to improve my work and my skills every day, always with curiosity and impetus looking for solutions to the problems that arise and learning new things in this eternal path of study that is to be a developer, while also learning from my peers and helping other team members."
@@ -25,5 +26,12 @@
     "second": "Collaborated with project managers and creative teams to deliver an original and effective solution, advised clients and provided my expertise",
     "third": "Collaborated with the team to design and structure and implement new websites from start to finish and updated existing websites",
     "fourth": "Participated in weekly meetings to discuss the progress of the project and the team's goals"
+  },
+  "Portfolio": {
+    "first": "Personal Projects",
+    "second": "Professional Projects",
+    "link": "Visit the site",
+    "github": "Check the code",
+    "soon": "Coming soon"
   }
 }

@@ -1,0 +1,82 @@
+$White: #ffffff;
+$Black: #231b1b;
+$Grey: #fdfffc;
+$Blue: #1c6dd0;
+$pink: #fa4eab;
+
+@font-face {
+  font-family: Meows;
+  src: url("../../fonts/Meows.ttf") format("opentype");
+}
+
+.NextLingo {
+  text-align: center;
+  font-size: 9vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0px;
+  color: $Grey;
+  font-family: "Meows", sans-serif;
+  text-shadow: 4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b, 4px 4px 4px #231b1b,
+    4px 4px 4px #231b1b, 4px 4px 4px #231b1b;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.projectsButton {
+  background-color: $Blue;
+  border: 0 solid $Grey;
+  box-sizing: border-box;
+  height: 4.5rem;
+  color: #000000;
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  width: 23rem;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.projectsButton:focus {
+  outline: 0;
+}
+
+.projectsButton:after {
+  content: "";
+  position: absolute;
+  border: 5px solid $Black;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.projectsButton:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .NextLingo {
+    font-size: 5vh;
+  }
+  .projectsButton {
+    width: 15rem;
+    height: 4rem;
+    justify-content: center;
+  }
+}

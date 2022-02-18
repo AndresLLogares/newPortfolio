@@ -13,7 +13,7 @@ import { DefaultTheme } from "@material-ui/styles";
 import { colors } from "./styles/colors";
 import Loading from "./components/Loading/index";
 import { urlsSVG } from "./styles/urls";
-
+import Portfolio from "./components/Portfolio/index";
 const Home = lazy(() => import("./components/Home/index"));
 const Navbar = lazy(() => import("./components/Navbar/index"));
 const Buttontoggle = lazy(() => import("./components/Buttontoggle/index"));
