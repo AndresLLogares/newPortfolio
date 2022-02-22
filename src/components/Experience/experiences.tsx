@@ -3,6 +3,8 @@ import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { DefaultTheme } from "@material-ui/styles";
+import "./button.scss";
+import { useGlobalState } from "../../hooks/useTheme";
 
 const Experiences = (props: any) => {
   let colorTheme: any = useTheme();
@@ -38,8 +40,8 @@ const Experiences = (props: any) => {
     company: {
       display: "flex",
       fontFamily: ["Poppins", "sans-serif"].join(","),
-      fontSize: "4vh",
-      color: colors.palette.secondary.main,
+      fontSize: "3vh",
+      color: colors.palette.primary.main,
       fontWeight: "bold",
     },
     separator: {
@@ -78,6 +80,7 @@ const Experiences = (props: any) => {
     },
   });
   const classes = useStyles();
+  const [theme] = useGlobalState("theme");
 
   return (
     <div className={classes.root}>
@@ -88,7 +91,12 @@ const Experiences = (props: any) => {
           style={{ textDecoration: "none" }}
           href={props.link}
         >
-          <Typography className={classes.company}>{props.company}</Typography>
+          <button
+            className={theme === "light" ? "buttonSocial" : "buttonSocialDark"}
+            type="button"
+          >
+            <Typography className={classes.company}>{props.company}</Typography>
+          </button>
         </a>
         <div className={classes.separator}>
           <Typography className={classes.date}>{props.date}</Typography>

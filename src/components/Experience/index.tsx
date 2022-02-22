@@ -61,9 +61,7 @@ const Experience = () => {
         <Subtitle title={t("Experience.title")} />
         <Experiences
           company={"Octosoft Professionals"}
-          link={
-            "https://www.linkedin.com/company/octosoft-professionals/mycompany/"
-          }
+          link={"https://octosoftprofessionals.com/"}
           date={`08/2021 - ${t("Experience.time")}`}
           position={"Full Stack Developer"}
           details={details}
