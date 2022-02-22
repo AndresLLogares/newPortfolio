@@ -43,6 +43,9 @@ const Experiences = (props: any) => {
       fontSize: "3vh",
       color: colors.palette.primary.main,
       fontWeight: "bold",
+      "@media (max-width: 1024px)": {
+        fontSize: "2.5vh",
+      },
     },
     separator: {
       display: "flex",
