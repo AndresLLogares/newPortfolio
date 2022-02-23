@@ -41,7 +41,7 @@ const Experiences = (props: any) => {
       display: "flex",
       fontFamily: ["Poppins", "sans-serif"].join(","),
       fontSize: "3vh",
-      color: colors.palette.primary.main,
+      color: colors.palette.background.default,
       fontWeight: "bold",
       "@media (max-width: 1024px)": {
         fontSize: "2.5vh",
