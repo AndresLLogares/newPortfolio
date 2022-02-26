@@ -3,12 +3,21 @@ $Black: #231b1b;
 $Grey: #fdfffc;
 $Blue: #1c6dd0;
 $pink: #fa4eab;
-
+$Nile: #233d91;
 @font-face {
   font-family: Meows;
   src: url("../../fonts/Meows.ttf") format("opentype");
 }
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 
+.Nile {
+  font-family: "Cairo", sans-serif;
+  font-size: 9vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0px;
+  color: $Nile;
+}
 .NextLingo {
   text-align: center;
   font-size: 9vh;

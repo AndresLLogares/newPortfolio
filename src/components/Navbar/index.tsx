@@ -13,6 +13,8 @@ import { DefaultTheme } from "@material-ui/styles";
 import scroll from "../utils/scroll";
 import { urlsSVG } from "../../styles/urls";
 import "./dropdown.scss";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -53,6 +55,16 @@ const Navbar = () => {
             : classes.navbarLight
         }
       >
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Toolbar className={classes.toolbar}>
           <div className={classes.divLogo}>
             <a

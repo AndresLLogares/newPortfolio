@@ -6,7 +6,8 @@
     "about-me": "About Me",
     "Technologies": "Technologies",
     "Contact": "Contact Me",
-    "Portfolio": "Portfolio "
+    "Portfolio": "Portfolio ",
+    "Message": "Or you can send me a message"
   },
   "About": {
     "first": "I am passionate about development, trying to improve my work and my skills every day, always with curiosity and impetus looking for solutions to the problems that arise and learning new things in this eternal path of study that is to be a developer, while also learning from my peers and helping other team members."
@@ -33,5 +34,12 @@
     "link": "Visit the site",
     "github": "Check the code",
     "soon": "Coming soon"
+  },
+  "label": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "placeholder": "Your message",
+    "send": "Send"
   }
 }

@@ -6,6 +6,7 @@ import Recommendations from "../Recommendations/index";
 import Experience from "../Experience/index";
 import Footer from "../Footer/index";
 import Portfolio from "../Portfolio/index";
+import MessageMe from "../MessageMe/index";
 const Home = () => (
   <>
     <Name />
@@ -17,6 +18,8 @@ const Home = () => (
     <br />
     <Recommendations />
     <ContactMe />
+    <br />
+    <MessageMe />
     <Footer />
   </>
 );

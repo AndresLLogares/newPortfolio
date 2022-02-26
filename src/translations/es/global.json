@@ -6,7 +6,8 @@
     "about-me": "Sobre Mí",
     "Technologies": "Tecnologías",
     "Contact": "Contáctame",
-    "Portfolio": "Portfolio "
+    "Portfolio": "Portfolio ",
+    "Message": "O puedes enviarme un mensaje"
   },
   "About": {
     "first": "Un apasionado del desarrollo, tratando de mejorar mis trabajos y capacidades cada día, siempre con mucha curiosidad y ímpetu buscando soluciones a los problemas que se presenten y aprendiendo cosas nuevas en este camino eterno de estudio que implica el ser desarrollador, mientras también aprendo de mis compañeros y ayudo a los demás miembros del equipo."
@@ -34,5 +35,12 @@
     "link": "Visita el sitio",
     "github": "Mira el código",
     "soon": "Próximamente"
+  },
+  "label": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "placeholder": "Su mensaje",
+    "send": "Enviar"
   }
 }

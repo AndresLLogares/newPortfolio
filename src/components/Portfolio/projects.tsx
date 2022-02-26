@@ -7,6 +7,8 @@ import { Typography, Box } from "@material-ui/core";
 import NextLingo from "../../assets/NextLingo.png";
 import { Link } from "@styled-icons/bootstrap/Link";
 import { Github } from "@styled-icons/boxicons-logos/Github";
+import Nile from "../../assets/Nile.svg";
+
 import "./title.scss";
 const Projects = () => {
   let colorTheme: any = useTheme();
@@ -66,8 +68,9 @@ const Projects = () => {
       backgroundColor: "#ffffff",
       borderRadius: "10px",
       border: "5px solid " + colors.palette.common.main,
-      width: "40rem",
-      height: "40rem",
+      width: "30rem",
+      minHeight: "30rem",
+      height: "fit-content",
       "@media (max-width: 1024px)": {
         width: "90%",
       },
@@ -160,9 +163,27 @@ const Projects = () => {
         <Typography className={classes.subtitle}>
           {t("Portfolio.second")}
         </Typography>
-        <Typography className={classes.subtitle}>
-          {t("Portfolio.soon")}
-        </Typography>
+        <div className={classes.wrap}>
+          <div className={classes.projects}>
+            <p className="Nile">NileDAO</p>
+            <img src={Nile} alt="Nile" className={classes.projectsImage} />
+            <div className={classes.projectsLinks}>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.niledao.io/"
+              >
+                <button className="projectsButton">
+                  <Link className={classes.projectsIcon} />
+                  <Typography className={classes.projectsText}>
+                    {t("Portfolio.link")}
+                  </Typography>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
