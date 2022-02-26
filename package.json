@@ -38,7 +38,7 @@
     "test": "react-scripts test",
     "start": "./node_modules/.bin/netlify-lambda serve src",
     "dev": "env-cmd react-scripts start",
-    "build": "env-cmd react-scripts build",
+    "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
