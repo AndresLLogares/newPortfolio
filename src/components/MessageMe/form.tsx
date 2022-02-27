@@ -77,6 +77,9 @@ const Form = () => {
     rootForm: {
       display: "flex",
       width: "100%",
+      alignItems: "center",
+      justifyContent: "center",
+      alignSelf: "center",
       paddingTop: "2rem",
       height: "fit-content",
       flexDirection: "column",
@@ -88,9 +91,6 @@ const Form = () => {
       justifyContent: "center",
       flexDirection: "column",
       height: "fit-content",
-      "& $notchedOutline": {
-        borderColor: "red",
-      },
     },
     firstForm: {
       display: "flex",
@@ -117,26 +117,29 @@ const Form = () => {
       flexDirection: "column",
       height: "fit-content",
       "@media (max-width: 1024px)": {
-        margin: "0 0 0 0",
+        margin: "0",
+        alignSelf: "center",
         marginBottom: "1rem",
         marginTop: "1rem",
       },
     },
     input: {
       display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      alignSelf: "center",
       height: "fit-content",
       backgroundColor: colors.palette.background.default,
       fontFamily: ["Poppins", "sans-serif"].join(","),
       fontSize: "3vh",
       borderRadius: "5px",
-      color: "#231b1b",
       width: "20rem",
       "@media (max-width: 1024px)": {
         width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
+        marginLeft: "10%",
       },
       "& div": {
+        display: "flex",
         width: "20rem",
         color: colors.palette.primary.main,
         fontSize: "2vh",
@@ -181,6 +184,7 @@ const Form = () => {
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
+        marginLeft: "10%",
       },
       "& div": {
         width: "25rem",
