@@ -13,6 +13,8 @@ import { DefaultTheme } from "@material-ui/styles";
 import { colors } from "./styles/colors";
 import Loading from "./components/Loading/index";
 import { urlsSVG } from "./styles/urls";
+import Helmet from "react-helmet";
+import Logo from "../src/assets/logo.svg";
 const Home = lazy(() => import("./components/Home/index"));
 const Navbar = lazy(() => import("./components/Navbar/index"));
 const Buttontoggle = lazy(() => import("./components/Buttontoggle/index"));
@@ -57,6 +59,18 @@ const App = () => {
   return (
     <I18nextProvider i18n={i18next}>
       <ThemeProvider theme={currentTheme}>
+        <Helmet>
+          <meta name="description" content="Portfolio Andres Logares" />
+          <meta name="keywords" content="Developer, React" />
+          <meta property="og:title" content="Andres Logares" />
+          <meta property="og:description" content="Portfolio Andres Logares" />
+          <meta property="og:image" content={Logo} />
+          <meta property="og:locale" content="en_US" />
+          <meta
+            property="og:url"
+            content="https://andreslogares.netlify.app/"
+          />
+        </Helmet>
         <Box className={theme !== "light" ? classes.rootDark : classes.root}>
           <Suspense fallback={<Loading />}>
             <Navbar />
