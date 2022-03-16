@@ -8,6 +8,7 @@ import NextLingo from "../../assets/NextLingo.png";
 import { Link } from "@styled-icons/bootstrap/Link";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import Nile from "../../assets/Nile.svg";
+import Coolormedia from "../../assets/coolormedia.svg";
 
 import "./title.scss";
 const Projects = () => {
@@ -69,7 +70,7 @@ const Projects = () => {
       borderRadius: "10px",
       border: "5px solid " + colors.palette.common.main,
       width: "30rem",
-      minHeight: "30rem",
+      minHeight: "40rem",
       height: "fit-content",
       "@media (max-width: 1024px)": {
         width: "90%",
@@ -84,6 +85,7 @@ const Projects = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
+      height: "100%",
       width: "90%",
       flexDirection: "column",
     },
@@ -147,6 +149,42 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/AndresLLogares/nextlingofront"
+              >
+                <button className="projectsButton">
+                  <Github className={classes.projectsIcon} />
+                  <Typography className={classes.projectsText}>
+                    {t("Portfolio.github")}
+                  </Typography>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className={classes.projects}>
+            <p className="coolormedia">CoolorMedia</p>
+            <img
+              src={Coolormedia}
+              alt="coolormedia"
+              className={classes.projectsImage}
+            />
+            <div className={classes.projectsLinks}>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href="https://coolormedia.netlify.app/"
+              >
+                <button className="projectsButton">
+                  <Link className={classes.projectsIcon} />
+                  <Typography className={classes.projectsText}>
+                    {t("Portfolio.link")}
+                  </Typography>
+                </button>
+              </a>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/AndresLLogares/coolormediafront"
               >
                 <button className="projectsButton">
                   <Github className={classes.projectsIcon} />
