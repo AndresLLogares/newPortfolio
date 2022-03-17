@@ -159,42 +159,6 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          {/*    <div className={classes.projects}>
-            <p className="coolormedia">CoolorMedia</p>
-            <img
-              src={Coolormedia}
-              alt="coolormedia"
-              className={classes.projectsImage}
-            />
-            <div className={classes.projectsLinks}>
-              <a
-                style={{ textDecoration: "none" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://coolormedia.netlify.app/"
-              >
-                <button className="projectsButton">
-                  <Link className={classes.projectsIcon} />
-                  <Typography className={classes.projectsText}>
-                    {t("Portfolio.link")}
-                  </Typography>
-                </button>
-              </a>
-              <a
-                style={{ textDecoration: "none" }}
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/AndresLLogares/coolormediafront"
-              >
-                <button className="projectsButton">
-                  <Github className={classes.projectsIcon} />
-                  <Typography className={classes.projectsText}>
-                    {t("Portfolio.github")}
-                  </Typography>
-                </button>
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
       <div className={classes.father}>
