@@ -38,6 +38,8 @@ const Name = () => {
       alignItems: "center",
       justifyContent: "center",
       zIndex: 2,
+      animation:
+        "$tilt-in-top-1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       "@media (max-width: 1024px)": {
         flexDirection: "column",
         width: "100%",
@@ -70,6 +72,18 @@ const Name = () => {
       justifyContent: "center",
       textAlign: "center",
       zIndex: 2,
+      animation:
+        "$tilt-in-top-1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+    },
+    "@keyframes tilt-in-top-1": {
+      "0%": {
+        transform: "rotateY(30deg) translateY(-300px) skewY(-30deg)",
+        opacity: 0,
+      },
+      "100%": {
+        transform: "rotateY(0deg) translateY(0) skewY(0deg)",
+        opacity: 1,
+      },
     },
   });
 
