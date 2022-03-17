@@ -159,7 +159,7 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <div className={classes.projects}>
+          {/*    <div className={classes.projects}>
             <p className="coolormedia">CoolorMedia</p>
             <img
               src={Coolormedia}
@@ -194,7 +194,7 @@ const Projects = () => {
                 </button>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.father}>
