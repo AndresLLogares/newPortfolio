@@ -19,13 +19,13 @@ const Name = () => {
       display: "flex",
       width: "100%",
       height: "80vh",
-      marginTop: "10vh",
+      marginTop: "15vh",
       marginBottom: "15vh",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       "@media (max-width: 1024px)": {
-        marginTop: "15vh",
+        marginTop: "25vh",
         height: "100vh",
         marginBottom: "12vh",
       },
@@ -84,9 +84,8 @@ const Name = () => {
             <img src={Logo} alt="logo" className={classes.logo} />
           </div>
           <div className={classes.divSort}>
-            <Typography variant="h1" className="title">
-              Andrés Logares
-            </Typography>
+            <Typography className="title">Andrés </Typography>
+            <Typography className="title">Logares </Typography>
           </div>
         </div>
         <div className={classes.divSubname}>
