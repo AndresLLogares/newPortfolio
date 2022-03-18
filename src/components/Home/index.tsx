@@ -20,6 +20,7 @@ const Home = () => (
     <ContactMe />
     <br />
     <MessageMe />
+    <br />
     <Footer />
   </>
 );
