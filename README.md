@@ -6,7 +6,7 @@ Nuevo portfolio realizado para mostrar mis avances a lo largo de este lapso de t
 
 
 - ![React](https://img.shields.io/badge/-React.js-blue)  
-- ![Typescript](https://img.shields.io/badge/-Javascript-yellow)
+- ![Typescript](https://img.shields.io/badge/-Typescript-yellow)
 - ![Node](https://img.shields.io/badge/-Node-green)
 - ![MaterialUI](https://img.shields.io/badge/-MaterialUI-red)
 
@@ -22,7 +22,7 @@ New portfolio made to show my progress during this period of time, I hope you li
 ## Technologies: 
 
 - ![React](https://img.shields.io/badge/-React.js-blue)  
-- ![Typescript](https://img.shields.io/badge/-Javascript-yellow)
+- ![Typescript](https://img.shields.io/badge/-Typescript-yellow)
 - ![Node](https://img.shields.io/badge/-Node-green)
 - ![MaterialUI](https://img.shields.io/badge/-MaterialUI-red)
 
