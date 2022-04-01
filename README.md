@@ -4,11 +4,11 @@ Nuevo portfolio realizado para mostrar mis avances a lo largo de este lapso de t
 
 ## Tecnologías: 
 
-- ![React](https://img.shields.io/badge/-Next.js-blue)  
-- ![Javascript](https://img.shields.io/badge/-Javascript-yellow)
+
+- ![React](https://img.shields.io/badge/-React.js-blue)  
+- ![Typescript](https://img.shields.io/badge/-Typescript-yellow)
 - ![Node](https://img.shields.io/badge/-Node-green)
-- ![CSS](https://img.shields.io/badge/-SCSS-yellowgreen)
-- ![Material UI](https://img.shields.io/badge/-Express-blue)
+- ![MaterialUI](https://img.shields.io/badge/-MaterialUI-red)
 
 ## Puedes ver la pagina aquí:
 
@@ -21,11 +21,10 @@ New portfolio made to show my progress during this period of time, I hope you li
 
 ## Technologies: 
 
-- ![React](https://img.shields.io/badge/-Next.js-blue)  
-- ![Javascript](https://img.shields.io/badge/-Javascript-yellow)
+- ![React](https://img.shields.io/badge/-React.js-blue)  
+- ![Typescript](https://img.shields.io/badge/-Typescript-yellow)
 - ![Node](https://img.shields.io/badge/-Node-green)
-- ![CSS](https://img.shields.io/badge/-SCSS-yellowgreen)
-- ![Material UI](https://img.shields.io/badge/-Express-blue)
+- ![MaterialUI](https://img.shields.io/badge/-MaterialUI-red)
 
 ## You can see the website here:
 
