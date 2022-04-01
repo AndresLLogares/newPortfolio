@@ -9,7 +9,7 @@ $Nile: #233d91;
   src: url("../../fonts/Meows.ttf") format("opentype");
 }
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @font-face {
   font-family: "Badabb";
   src: url(../../fonts/Lemon.ttf);
@@ -41,6 +41,17 @@ $Nile: #233d91;
   -webkit-font-smoothing: antialiased;
 }
 
+.fairview {
+  font-family: "Audiowide", cursive;
+  font-size: 9vh;
+  color: $Black;
+  font-weight: 500;
+  text-shadow: $White 2px 2px 0px, $White 4px 4px 0px;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .coolormedia {
   font-family: "Badabb", sans-serif;
   font-size: 9vh;
@@ -66,7 +77,7 @@ $Nile: #233d91;
   line-height: 1.75rem;
   padding: 0.75rem 1.65rem;
   position: relative;
-  width: 23rem;
+  width: 20rem;
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);

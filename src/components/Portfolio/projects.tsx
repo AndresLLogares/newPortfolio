@@ -9,6 +9,7 @@ import { Link } from "@styled-icons/bootstrap/Link";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import Nile from "../../assets/Nile.svg";
 import Coolormedia from "../../assets/coolormedia.svg";
+import Fairview from "../../assets/Fairview.svg";
 
 import "./title.scss";
 const Projects = () => {
@@ -69,7 +70,7 @@ const Projects = () => {
       backgroundColor: "#ffffff",
       borderRadius: "10px",
       border: "5px solid " + colors.palette.common.main,
-      width: "30rem",
+      width: "25rem",
       minHeight: "40rem",
       height: "fit-content",
       "@media (max-width: 1024px)": {
@@ -185,6 +186,42 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/AndresLLogares/coolormediafront"
+              >
+                <button className="projectsButton">
+                  <Github className={classes.projectsIcon} />
+                  <Typography className={classes.projectsText}>
+                    {t("Portfolio.github")}
+                  </Typography>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className={classes.projects}>
+            <p className="fairview">Fairview</p>
+            <img
+              src={Fairview}
+              alt="Fairview"
+              className={classes.projectsImage}
+            />
+            <div className={classes.projectsLinks}>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href="https://fairviewgallery.netlify.app/"
+              >
+                <button className="projectsButton">
+                  <Link className={classes.projectsIcon} />
+                  <Typography className={classes.projectsText}>
+                    {t("Portfolio.link")}
+                  </Typography>
+                </button>
+              </a>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/AndresLLogares/fairviewFrontend"
               >
                 <button className="projectsButton">
                   <Github className={classes.projectsIcon} />
